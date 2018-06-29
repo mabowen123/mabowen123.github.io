@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="孖">
-<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta name="description" content="陈怀远    下面内容随便写的，想到什么就写什么，所以很凌乱，如果打算接触docker swarm 的可以看看，说不定对你有帮助，如有实在想不通的地方可以亲自问本人。   当一个线上业务做到一定程度的时候，服务器过度负载的时候，就必须通过增加服务器来缓解另外服务器的压力，提高性能。 这个时候，问题来了，如何让多台服务器实现高可用呢？ 答案就是集群，给所有服务器做集群。   创建集群在docker中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker swarm">
+<meta property="og:url" content="http://yoursite.com/2018/06/26/docker集群笔记-chenhuaiyuan/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
+<meta property="og:description" content="陈怀远    下面内容随便写的，想到什么就写什么，所以很凌乱，如果打算接触docker swarm 的可以看看，说不定对你有帮助，如有实在想不通的地方可以亲自问本人。   当一个线上业务做到一定程度的时候，服务器过度负载的时候，就必须通过增加服务器来缓解另外服务器的压力，提高性能。 这个时候，问题来了，如何让多台服务器实现高可用呢？ 答案就是集群，给所有服务器做集群。   创建集群在docker中">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-26T07:25:05.376Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="孖">
-<meta name="twitter:description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
+<meta name="twitter:title" content="docker swarm">
+<meta name="twitter:description" content="陈怀远    下面内容随便写的，想到什么就写什么，所以很凌乱，如果打算接触docker swarm 的可以看看，说不定对你有帮助，如有实在想不通的地方可以亲自问本人。   当一个线上业务做到一定程度的时候，服务器过度负载的时候，就必须通过增加服务器来缓解另外服务器的压力，提高性能。 这个时候，问题来了，如何让多台服务器实现高可用呢？ 答案就是集群，给所有服务器做集群。   创建集群在docker中">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/3/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/26/docker集群笔记-chenhuaiyuan/"/>
 
 
 
 
 
-  <title>孖</title>
+  <title>docker swarm | 孖</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/26/docker集群笔记-chenhuaiyuan/" itemprop="url">docker swarm</a></h1>
+          <h1 class="post-title" itemprop="name headline">docker swarm</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <font style="float:right;">陈怀远</font>  
+        <font style="float:right;">陈怀远</font>  
 
 <p><br><br>下面内容随便写的，想到什么就写什么，所以很凌乱，如果打算接触docker swarm 的可以看看，说不定对你有帮助，如有实在想不通的地方可以亲自问本人。  </p>
 <p>当一个线上业务做到一定程度的时候，服务器过度负载的时候，就必须通过增加服务器来缓解另外服务器的压力，提高性能。 这个时候，问题来了，如何让多台服务器实现高可用呢？</p>
@@ -336,8 +332,6 @@ container_name: nginx
 <p>这里说一点，最新版的 Swarm 提供自动服务发现与集群负载功能。</p>
 <p>关于docker swarm，我就先写那么多。如有时间，再完善。</p>
 
-          
-        
       
     </div>
     
@@ -354,12 +348,32 @@ container_name: nginx
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/26/http响应码-mabowen/" rel="next" title="HTTP状态码">
+                <i class="fa fa-chevron-left"></i> HTTP状态码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/26/大话设计模式笔记-mabowen/" rel="prev" title="大话设计模式笔记">
+                大话设计模式笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -369,14 +383,11 @@ container_name: nginx
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -384,6 +395,10 @@ container_name: nginx
 
 
           
+
+  
+
+
 
         </div>
         
@@ -404,8 +419,17 @@ container_name: nginx
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -447,6 +471,22 @@ container_name: nginx
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建集群"><span class="nav-number">1.</span> <span class="nav-text">创建集群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加节点"><span class="nav-number">2.</span> <span class="nav-text">添加节点</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -600,6 +640,10 @@ container_name: nginx
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

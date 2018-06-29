@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="孖">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="先说一下在什么场景会使用这个事件功能。事情大概是这样的，需求要在用户注册的时候发一些帮助邮件给用户（原本用户在注册之后已经有发别的邮件的了，短信，IM什么的）原来这个注册的方法也就10多行代码。但是有时候我们为了省事，直接在注册代码后面添加了各种代码。  例如这个注册方法本来是这样的 1234567891011121314151617&amp;lt;?phpnamespace App\Htt\Contr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="laravel事件温习">
+<meta property="og:url" content="http://yoursite.com/2018/06/29/laravel事件温习-zhengzhiyu/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
+<meta property="og:description" content="先说一下在什么场景会使用这个事件功能。事情大概是这样的，需求要在用户注册的时候发一些帮助邮件给用户（原本用户在注册之后已经有发别的邮件的了，短信，IM什么的）原来这个注册的方法也就10多行代码。但是有时候我们为了省事，直接在注册代码后面添加了各种代码。  例如这个注册方法本来是这样的 1234567891011121314151617&amp;lt;?phpnamespace App\Htt\Contr">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-29T05:30:01.689Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="孖">
-<meta name="twitter:description" content="然而无论处于哪种心境当中,我相信,只要想起自己曾经满怀惊奇、兴奋与真诚敲下的那个程序—“Hello，World！”我们就会充满了渴望和力量，因为那是程序员最初的梦想：改变世界。">
+<meta name="twitter:title" content="laravel事件温习">
+<meta name="twitter:description" content="先说一下在什么场景会使用这个事件功能。事情大概是这样的，需求要在用户注册的时候发一些帮助邮件给用户（原本用户在注册之后已经有发别的邮件的了，短信，IM什么的）原来这个注册的方法也就10多行代码。但是有时候我们为了省事，直接在注册代码后面添加了各种代码。  例如这个注册方法本来是这样的 1234567891011121314151617&amp;lt;?phpnamespace App\Htt\Contr">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/29/laravel事件温习-zhengzhiyu/"/>
 
 
 
 
 
-  <title>孖</title>
+  <title>laravel事件温习 | 孖</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/29/laravel事件温习-zhengzhiyu/" itemprop="url">laravel事件温习</a></h1>
+          <h1 class="post-title" itemprop="name headline">laravel事件温习</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>先说一下在什么场景会使用这个事件功能。<br>事情大概是这样的，需求要在用户注册的时候发一些帮助邮件给用户（原本用户在注册之后已经有发别的邮件的了，短信，IM什么的）<br>原来这个注册的方法也就10多行代码。但是有时候我们为了省事，直接在注册代码后面添加了各种代码。</p>
 </blockquote>
 <p>例如这个注册方法本来是这样的</p>
@@ -332,8 +328,6 @@
 <p>这个handle方法就是我们要做的具体实现了，有个很方便的功能就是如果implements ShouldQueue这个接口的话就会异步队列执行，如果去掉的话就是同步执行。很方便有没有，这样代码就解耦了，不需要再管注册代码了，在这里就能很方便的管理了。多人开发也是单独写自己的Listeners就可以了。</p>
 </blockquote>
 
-          
-        
       
     </div>
     
@@ -350,12 +344,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/26/大话设计模式笔记-mabowen/" rel="next" title="大话设计模式笔记">
+                <i class="fa fa-chevron-left"></i> 大话设计模式笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -365,14 +375,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -380,6 +387,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -596,6 +607,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
