@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="113 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及具体得求解过程,这样得思">
+<meta name="description" content="133 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式 建造者模式 观察者模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大话设计模式笔记">
 <meta property="og:url" content="http://yoursite.com/2018/06/26/大话设计模式笔记-mabowen/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="113 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及具体得求解过程,这样得思">
+<meta property="og:description" content="133 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式 建造者模式 观察者模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T06:54:59.792Z">
+<meta property="og:updated_time" content="2018-06-29T08:12:17.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大话设计模式笔记">
-<meta name="twitter:description" content="113 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及具体得求解过程,这样得思">
+<meta name="twitter:description" content="133 代码规范1.命名要规范2.代码逻辑要规范 模式 简单工厂模式 工厂模式 策略模式 装饰模式 代理模式 原型模式 外观模式 建造者模式 观察者模式  面向对象编程面向对象有三大特性:封装,继承和多态   面向对象有六大原则:  单一责任原则 开放封闭原则 里氏替换原则  接口隔离原则 依赖倒置原则 迪米特原则(最少知识原则)  碰到问题就自觉得用计算机能理解得逻辑来描述和表达待解决的而问题及">
 
 
 
@@ -299,7 +299,7 @@
       
 
       
-        <p>113</p>
+        <p>133</p>
 <h4 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h4><p>1.命名要规范<br>2.代码逻辑要规范</p>
 <h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><ul>
 <li>简单工厂模式</li>
@@ -309,6 +309,8 @@
 <li>代理模式</li>
 <li>原型模式</li>
 <li>外观模式</li>
+<li>建造者模式</li>
+<li>观察者模式</li>
 </ul>
 <h4 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h4><p>面向对象有三大特性:封装,继承和多态  </p>
 <p>面向对象有六大原则:</p>
@@ -362,7 +364,13 @@
 <h4 id="模板方法模式"><a href="#模板方法模式" class="headerlink" title="模板方法模式"></a>模板方法模式</h4><p>我们要完成在某一细节层次一致的一个过程或一系列步骤,但其个别步骤在更详细的层次上的实现可能不同时,我们通常考虑用模板方法模式处理</p>
 <p>定义一个操作中的算法的骨架,而将一些步骤延迟到子类中,模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤</p>
 <p>当不变的和可变的行为在方法的子类实现中混合在一起的时候,不变的行为就会在子类中重复出现.我们通过模板方法模式把这些行为搬移到单一的地方,这样就帮助子类摆脱重复的不变行为的纠缠</p>
-<h4 id="外观模式"><a href="#外观模式" class="headerlink" title="外观模式"></a>外观模式</h4><p>参考资料:<br><a href="https://segmentfault.com/a/1190000005748456" target="_blank" rel="noopener">设计模式总汇总</a><br><a href="https://segmentfault.com/a/1190000015231632" target="_blank" rel="noopener">设计模式六大原则</a></p>
+<h4 id="外观模式"><a href="#外观模式" class="headerlink" title="外观模式"></a>外观模式</h4><p>为子系统中的一组接口提供一个一致的界面,此模式定义了一个高层接口,这个接口使得这一子系统更加容易使用</p>
+<h4 id="建造者模式"><a href="#建造者模式" class="headerlink" title="建造者模式"></a>建造者模式</h4><p>将一个复杂对象的构建与它的表示分离,使得同样的构造过程可以创建不同的表示</p>
+<p>建造者模式的好处就是使得建造代码与表示代码分离,由于建造者隐藏了该产品是如何组装的所以若需要改变一个产品的内部表示,只需要再定义一个具体的建造者就可以了</p>
+<p>建造者模式实在当创建复杂对象的算法应该独立于该对象的组成部分以及他们的装配方式适用 的模式</p>
+<h4 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h4><p>定义了一种一对多的依赖关系,让多个观察者对象同时监听某一个主题对象.这个主题对象在状态发生变化时,会通知所有观察者对象,使他们能够自动更新自己</p>
+<p>观察者模式所做的工作其实就是在接触耦合,让耦合的双方都依赖于抽象,而不是依赖于具体.从而使得各自的变化都不会影响另一边的变化</p>
+<p>参考资料:<br><a href="https://segmentfault.com/a/1190000005748456" target="_blank" rel="noopener">设计模式总汇总</a><br><a href="https://segmentfault.com/a/1190000015231632" target="_blank" rel="noopener">设计模式六大原则</a></p>
 
       
     </div>
@@ -476,7 +484,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -513,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码规范"><span class="nav-number">1.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模式"><span class="nav-number">2.</span> <span class="nav-text">模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象编程"><span class="nav-number">3.</span> <span class="nav-text">面向对象编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象得好处"><span class="nav-number">4.</span> <span class="nav-text">面向对象得好处</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#业务的封装"><span class="nav-number">5.</span> <span class="nav-text">业务的封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单一职责原则"><span class="nav-number">6.</span> <span class="nav-text">单一职责原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开放-封闭原则"><span class="nav-number">7.</span> <span class="nav-text">开放-封闭原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#依赖倒转原则"><span class="nav-number">8.</span> <span class="nav-text">依赖倒转原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#里氏替换原则"><span class="nav-number">9.</span> <span class="nav-text">里氏替换原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#迪米特原则"><span class="nav-number">10.</span> <span class="nav-text">迪米特原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单工厂模式"><span class="nav-number">11.</span> <span class="nav-text">简单工厂模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#策略模式"><span class="nav-number">12.</span> <span class="nav-text">策略模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#装饰模式"><span class="nav-number">13.</span> <span class="nav-text">装饰模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代理模式"><span class="nav-number">14.</span> <span class="nav-text">代理模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工厂模式"><span class="nav-number">15.</span> <span class="nav-text">工厂模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型模式"><span class="nav-number">16.</span> <span class="nav-text">原型模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模板方法模式"><span class="nav-number">17.</span> <span class="nav-text">模板方法模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#外观模式"><span class="nav-number">18.</span> <span class="nav-text">外观模式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码规范"><span class="nav-number">1.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模式"><span class="nav-number">2.</span> <span class="nav-text">模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象编程"><span class="nav-number">3.</span> <span class="nav-text">面向对象编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象得好处"><span class="nav-number">4.</span> <span class="nav-text">面向对象得好处</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#业务的封装"><span class="nav-number">5.</span> <span class="nav-text">业务的封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单一职责原则"><span class="nav-number">6.</span> <span class="nav-text">单一职责原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开放-封闭原则"><span class="nav-number">7.</span> <span class="nav-text">开放-封闭原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#依赖倒转原则"><span class="nav-number">8.</span> <span class="nav-text">依赖倒转原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#里氏替换原则"><span class="nav-number">9.</span> <span class="nav-text">里氏替换原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#迪米特原则"><span class="nav-number">10.</span> <span class="nav-text">迪米特原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单工厂模式"><span class="nav-number">11.</span> <span class="nav-text">简单工厂模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#策略模式"><span class="nav-number">12.</span> <span class="nav-text">策略模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#装饰模式"><span class="nav-number">13.</span> <span class="nav-text">装饰模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代理模式"><span class="nav-number">14.</span> <span class="nav-text">代理模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工厂模式"><span class="nav-number">15.</span> <span class="nav-text">工厂模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型模式"><span class="nav-number">16.</span> <span class="nav-text">原型模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模板方法模式"><span class="nav-number">17.</span> <span class="nav-text">模板方法模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#外观模式"><span class="nav-number">18.</span> <span class="nav-text">外观模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建造者模式"><span class="nav-number">19.</span> <span class="nav-text">建造者模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#观察者模式"><span class="nav-number">20.</span> <span class="nav-text">观察者模式</span></a></li></ol></div>
             
 
           </div>
