@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/24/PHP合并数组-mabowen/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/python20行代码检测微信单删-mabowen/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/24/PHP合并数组-mabowen/" itemprop="url">PHP 合并数组运算符 + 与 array_merge 函数</a></h1>
+                <a class="post-title-link" href="/2018/08/23/python20行代码检测微信单删-mabowen/" itemprop="url">python20行代码检测单删</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-24T20:11:48+08:00">
-                2018-07-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T15:20:23+08:00">
+                2018-08-23
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/24/PHP合并数组-mabowen/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/24/PHP合并数组-mabowen/" itemprop="commentCount"></span>
+                <a href="/2018/08/23/python20行代码检测微信单删-mabowen/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/23/python20行代码检测微信单删-mabowen/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/07/24/PHP合并数组-mabowen/" class="leancloud_visitors" data-flag-title="PHP 合并数组运算符 + 与 array_merge 函数">
+             <span id="/2018/08/23/python20行代码检测微信单删-mabowen/" class="leancloud_visitors" data-flag-title="python20行代码检测单删">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,13 +324,12 @@
       
         
           
-            <h3 id="在php中对两个数组进行合并-通常使用array-merge或者’-’运算符-他们的区别是什么"><a href="#在php中对两个数组进行合并-通常使用array-merge或者’-’运算符-他们的区别是什么" class="headerlink" title="在php中对两个数组进行合并,通常使用array_merge或者’+’运算符 他们的区别是什么"></a>在php中对两个数组进行合并,通常使用array_merge或者’+’运算符 他们的区别是什么</h3><h3 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$cfg = [</span><br><span class="line">    0 =&gt; &apos;cfg-1&apos;,</span><br><span class="line">    1 =&gt; &apos;cfg-1&apos;,</span><br><span class="line">    &apos;name&apos; =&gt; &apos;hlq&apos;,</span><br><span class="line">    &apos;age&apos; =&gt; 18,</span><br><span class="line">    &apos;job&apos; =&gt; &apos;engineer&apos;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">$default = [</span><br><span class="line">    0 =&gt; &apos;default-0&apos;,</span><br><span class="line">    1 =&gt; &apos;default-1&apos;,</span><br><span class="line">    &apos;name&apos; =&gt; &apos;hlq&apos;,</span><br><span class="line">    &apos;age&apos; =&gt; 16,</span><br><span class="line">    &apos;hobby&apos; =&gt; &apos;readding&apos;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">var_dump($cfg + $default);</span><br><span class="line"></span><br><span class="line">var_dump(array_merge($cfg, $default));</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">array(6) &#123;</span><br><span class="line">  [0]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [1]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [&quot;name&quot;]=&gt;</span><br><span class="line">  string(3) &quot;hlq&quot;</span><br><span class="line">  [&quot;age&quot;]=&gt;</span><br><span class="line">  int(18)</span><br><span class="line">  [&quot;job&quot;]=&gt;</span><br><span class="line">  string(8) &quot;engineer&quot;</span><br><span class="line">  [&quot;hobby&quot;]=&gt;</span><br><span class="line">  string(8) &quot;readding&quot;</span><br><span class="line">&#125;</span><br><span class="line">array(8) &#123;</span><br><span class="line">  [0]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [1]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [&quot;name&quot;]=&gt;</span><br><span class="line">  string(3) &quot;hlq&quot;</span><br><span class="line">  [&quot;age&quot;]=&gt;</span><br><span class="line">  int(16)</span><br><span class="line">  [&quot;job&quot;]=&gt;</span><br><span class="line">  string(8) &quot;engineer&quot;</span><br><span class="line">  [2]=&gt;</span><br><span class="line">  string(9) &quot;default-0&quot;</span><br><span class="line">  [3]=&gt;</span><br><span class="line">  string(9) &quot;default-1&quot;</span><br><span class="line">  [&quot;hobby&quot;]=&gt;</span><br><span class="line">  string(8) &quot;readding&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><ul>
-<li>array_merge和 ‘+’ 都可以合并数组</li>
-<li>array_merge会对相同字符串键名,用后面的数据重写数据,而加号不会</li>
-<li>array_merge对数字键名数据不会重写,而是根据数字键名接着写入数据</li>
-</ul>
+            <p>学习了python几天,无意中看见了itchat库,itchat库提供了许多微信的接口,很强大.<br>无意中发现了一个特殊字符,使用微信发送收不到.<br>那可以通过循环发好友发送特殊字符,来判断好友的关系<br>美中不足的是,我没找到删除好友的方法<br>还有一点想法没有实现,通过注册方法获取发送后note类型的通知,如果被删除好友或者被拉黑会才会有,而发送特殊字符成功不会又任何提示,这样就可以获取到好友的信息,如果知道删除好友的办法就可以做删好友的处理<br>特殊字符哪时候被封也不清楚,如果谁看见这篇文章,想要使用,记得先检测下特殊字符发送后对面能不能收到,<br>如果谁实现了希望可以与我分享下,wechat:mbw5200</p>
+<p><a href="https://itchat.readthedocs.io/zh/latest/" target="_blank" rel="noopener">itchat文档</a><br><a href="http://www.sohu.com/a/226268082_99960093" target="_blank" rel="noopener">特殊字符</a>  </p>
+<p>打包的exe文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">链接: https://pan.baidu.com/s/14iUbI5jBQMetj2-_di6tKg 密码: n54x</span><br></pre></td></tr></table></figure>
+<p>源码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env python3</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"># @Author :mabowen</span><br><span class="line"># @Time   :2018/8/15 19:56</span><br><span class="line">import itchat, time</span><br><span class="line">#登陆</span><br><span class="line">itchat.auto_login()</span><br><span class="line">#获取好友列表</span><br><span class="line">friendList = itchat.get_friends(update=True)[1:]</span><br><span class="line">num = [0,1]</span><br><span class="line"></span><br><span class="line">def send(g, num):</span><br><span class="line">    itchat.send(&apos;? ? ?&apos;, friendList[g + num][&apos;UserName&apos;])</span><br><span class="line">    print((friendList[g + num][&apos;RemarkName&apos;] or friendList[g + num][&apos;NickName&apos;]), &apos;已发送&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">itchat.send(&apos;正在开始测试&apos;, &apos;filehelper&apos;)</span><br><span class="line">#预估时间</span><br><span class="line">needtime = round(1+int(len(friendList)) /2/60, 2)</span><br><span class="line">itchat.send(&apos;共&apos; + str(len(friendList)) + &apos;人&apos; + &apos;\n预计需要&apos; + str(needtime) + &apos;min&apos;, &apos;filehelper&apos;)</span><br><span class="line">#循环给各个好友发送信息,1s发两条</span><br><span class="line">for g in range(0, len(friendList), 2):</span><br><span class="line">    for i in num:</span><br><span class="line">        if g + i &lt; len(friendList):</span><br><span class="line">            #发送特殊字符</span><br><span class="line">            send(g, i)</span><br><span class="line">            print(str(g + i+1) + &quot;/&quot; + str(len(friendList)) + &quot;\r&quot;)</span><br><span class="line">    #限制频率</span><br><span class="line">    time.sleep(1)</span><br><span class="line"></span><br><span class="line">itchat.send(&apos;结束测试,请在聊天列表页查看&apos;, &apos;filehelper&apos;)</span><br></pre></td></tr></table></figure>
 
           
         
@@ -370,7 +369,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -416,7 +415,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
