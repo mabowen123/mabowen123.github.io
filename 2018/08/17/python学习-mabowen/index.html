@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="孖">
 <meta property="og:description" content="变量变量的命名和使用 变量名只能包括字母,数字和下划线.变量名可以字母或下划线打头,但不能以数字打头  变量名不能包含空格,但是可以使用下划线来分隔其中的单词  不要将python关键字和函数名作变量名  变量名应既简短又具有描述性  慎用小写字母1和大写字母O,容易误看   字符串在python中,用引号括起的都是字符串,可以是单引号也可以是双引号 拼接符合 ‘+’ 列表是什么在python中,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-23T07:46:59.327Z">
+<meta property="og:updated_time" content="2018-08-24T01:26:51.331Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python学习">
 <meta name="twitter:description" content="变量变量的命名和使用 变量名只能包括字母,数字和下划线.变量名可以字母或下划线打头,但不能以数字打头  变量名不能包含空格,但是可以使用下划线来分隔其中的单词  不要将python关键字和函数名作变量名  变量名应既简短又具有描述性  慎用小写字母1和大写字母O,容易误看   字符串在python中,用引号括起的都是字符串,可以是单引号也可以是双引号 拼接符合 ‘+’ 列表是什么在python中,">
@@ -379,8 +379,7 @@
 <h4 id="根据类创建实例"><a href="#根据类创建实例" class="headerlink" title="根据类创建实例"></a>根据类创建实例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Dog():</span><br><span class="line">    def __init__(self,name,age):</span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    def sit(self):</span><br><span class="line">        print(self.name.title()+&apos;is now sitting&apos;)</span><br><span class="line">    def roll_over(self):</span><br><span class="line">        print(self.name.title()+&apos;rolled over&apos;)</span><br><span class="line"></span><br><span class="line">my_dog=Dog(&apos;willie&apos;,6)</span><br><span class="line">my_dog.sit()</span><br></pre></td></tr></table></figure>
 <p>根据实例 可以调用类的方法</p>
 <h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h4 id="类编码分隔"><a href="#类编码分隔" class="headerlink" title="类编码分隔"></a>类编码分隔</h4><p>类名采用驼峰命名法<br>实列名和模块名都采用小写格式并且在单词之间加上下划线</p>
-<h3 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">with open(&apos;pi.txt&apos;) as file_object:</span><br><span class="line">   s=file_object.read()</span><br><span class="line">   print(s)</span><br></pre></td></tr></table></figure>
-<p>185</p>
+<h3 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h3><p><code>`</code><br>with open(‘pi.txt’) as file_object:<br>   s=file_object.read()<br>   print(s)</p>
 
       
     </div>
