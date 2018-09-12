@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/24/PHP合并数组-mabowen/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/17/python学习-mabowen/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/24/PHP合并数组-mabowen/" itemprop="url">PHP 合并数组运算符 + 与 array_merge 函数</a></h1>
+                <a class="post-title-link" href="/2018/08/17/python学习-mabowen/" itemprop="url">python学习</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-24T20:11:48+08:00">
-                2018-07-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-17T09:45:48+08:00">
+                2018-08-17
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/24/PHP合并数组-mabowen/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/24/PHP合并数组-mabowen/" itemprop="commentCount"></span>
+                <a href="/2018/08/17/python学习-mabowen/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/17/python学习-mabowen/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/07/24/PHP合并数组-mabowen/" class="leancloud_visitors" data-flag-title="PHP 合并数组运算符 + 与 array_merge 函数">
+             <span id="/2018/08/17/python学习-mabowen/" class="leancloud_visitors" data-flag-title="python学习">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,13 +324,66 @@
       
         
           
-            <h3 id="在php中对两个数组进行合并-通常使用array-merge或者’-’运算符-他们的区别是什么"><a href="#在php中对两个数组进行合并-通常使用array-merge或者’-’运算符-他们的区别是什么" class="headerlink" title="在php中对两个数组进行合并,通常使用array_merge或者’+’运算符 他们的区别是什么"></a>在php中对两个数组进行合并,通常使用array_merge或者’+’运算符 他们的区别是什么</h3><h3 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$cfg = [</span><br><span class="line">    0 =&gt; &apos;cfg-1&apos;,</span><br><span class="line">    1 =&gt; &apos;cfg-1&apos;,</span><br><span class="line">    &apos;name&apos; =&gt; &apos;hlq&apos;,</span><br><span class="line">    &apos;age&apos; =&gt; 18,</span><br><span class="line">    &apos;job&apos; =&gt; &apos;engineer&apos;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">$default = [</span><br><span class="line">    0 =&gt; &apos;default-0&apos;,</span><br><span class="line">    1 =&gt; &apos;default-1&apos;,</span><br><span class="line">    &apos;name&apos; =&gt; &apos;hlq&apos;,</span><br><span class="line">    &apos;age&apos; =&gt; 16,</span><br><span class="line">    &apos;hobby&apos; =&gt; &apos;readding&apos;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">var_dump($cfg + $default);</span><br><span class="line"></span><br><span class="line">var_dump(array_merge($cfg, $default));</span><br></pre></td></tr></table></figure>
-<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">array(6) &#123;</span><br><span class="line">  [0]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [1]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [&quot;name&quot;]=&gt;</span><br><span class="line">  string(3) &quot;hlq&quot;</span><br><span class="line">  [&quot;age&quot;]=&gt;</span><br><span class="line">  int(18)</span><br><span class="line">  [&quot;job&quot;]=&gt;</span><br><span class="line">  string(8) &quot;engineer&quot;</span><br><span class="line">  [&quot;hobby&quot;]=&gt;</span><br><span class="line">  string(8) &quot;readding&quot;</span><br><span class="line">&#125;</span><br><span class="line">array(8) &#123;</span><br><span class="line">  [0]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [1]=&gt;</span><br><span class="line">  string(5) &quot;cfg-1&quot;</span><br><span class="line">  [&quot;name&quot;]=&gt;</span><br><span class="line">  string(3) &quot;hlq&quot;</span><br><span class="line">  [&quot;age&quot;]=&gt;</span><br><span class="line">  int(16)</span><br><span class="line">  [&quot;job&quot;]=&gt;</span><br><span class="line">  string(8) &quot;engineer&quot;</span><br><span class="line">  [2]=&gt;</span><br><span class="line">  string(9) &quot;default-0&quot;</span><br><span class="line">  [3]=&gt;</span><br><span class="line">  string(9) &quot;default-1&quot;</span><br><span class="line">  [&quot;hobby&quot;]=&gt;</span><br><span class="line">  string(8) &quot;readding&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><ul>
-<li>array_merge和 ‘+’ 都可以合并数组</li>
-<li>array_merge会对相同字符串键名,用后面的数据重写数据,而加号不会</li>
-<li>array_merge对数字键名数据不会重写,而是根据数字键名接着写入数据</li>
-</ul>
+            <h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="变量的命名和使用"><a href="#变量的命名和使用" class="headerlink" title="变量的命名和使用"></a>变量的命名和使用</h4><ol>
+<li><p>变量名只能包括字母,数字和下划线.变量名可以字母或下划线打头,但不能以数字打头</p>
+</li>
+<li><p>变量名不能包含空格,但是可以使用下划线来分隔其中的单词</p>
+</li>
+<li><p>不要将python关键字和函数名作变量名</p>
+</li>
+<li><p>变量名应既简短又具有描述性</p>
+</li>
+<li><p>慎用小写字母1和大写字母O,容易误看</p>
+</li>
+</ol>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>在python中,用引号括起的都是字符串,可以是单引号也可以是双引号</p>
+<p>拼接符合 ‘+’</p>
+<h3 id="列表是什么"><a href="#列表是什么" class="headerlink" title="列表是什么"></a>列表是什么</h3><p>在python中,用方括号来表示列表,并用逗号来分隔其中元素.</p>
+<h4 id="访问列表元素"><a href="#访问列表元素" class="headerlink" title="访问列表元素"></a>访问列表元素</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">test=[0,1,2,3,4]</span><br><span class="line">print(test[0])</span><br></pre></td></tr></table></figure>
+<h4 id="修改-添加和删除列表元素"><a href="#修改-添加和删除列表元素" class="headerlink" title="修改,添加和删除列表元素"></a>修改,添加和删除列表元素</h4><p>修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=[0,1,2,3,4]   </span><br><span class="line">test[0]=-1  </span><br><span class="line">print(test)</span><br></pre></td></tr></table></figure>
+<p>添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=[0,1,2,3,4]</span><br><span class="line">test.append(5)</span><br><span class="line">print</span><br></pre></td></tr></table></figure>
+<p>插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=[1,2,3,4]</span><br><span class="line">test.insert(0,0)</span><br><span class="line">print(test)</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=[0,1,2,3,4]</span><br><span class="line">del test[0]</span><br><span class="line">print(test)</span><br></pre></td></tr></table></figure>
+<p>或者pop删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">test=[1,2,3,4]</span><br><span class="line">print(test)</span><br><span class="line">pop_test=test.pop(1)</span><br><span class="line">print(test)</span><br><span class="line">print(pop_test)</span><br></pre></td></tr></table></figure>
+<p>rmove根据值删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=[0,1,2,3,4]</span><br><span class="line">test.remove(4)</span><br><span class="line">print(test)</span><br></pre></td></tr></table></figure>
+<h4 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h4><p>1.sort方法是永久排序</p>
+<p>2.sorted方法是临时排序</p>
+<p>3.reverse方法反转列表元素的排列顺序</p>
+<p>4.len方法获取列表长度</p>
+<h3 id="遍历整个列表"><a href="#遍历整个列表" class="headerlink" title="遍历整个列表"></a>遍历整个列表</h3><p>for循环,注意缩进 格式</p>
+<h4 id="使用函数range"><a href="#使用函数range" class="headerlink" title="使用函数range()"></a>使用函数range()</h4><p>range()方法让你能轻松生成一系列数字</p>
+<h4 id="简单统计计算"><a href="#简单统计计算" class="headerlink" title="简单统计计算"></a>简单统计计算</h4><p>1.min找出最小值</p>
+<p>2.max找出最大值</p>
+<p>3.sum求和</p>
+<h4 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h4><p>切片可以指定要使用的第一个元素和最后一个元素的索引.</p>
+<h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><p>元组看起来犹如列表,但使用圆括号而不是方括号来标识.定义元组后,就可以使用索引来访问元素,就像访问列表元素一样<br><strong>元组不可以修改</strong></p>
+<h3 id="遵循标准"><a href="#遵循标准" class="headerlink" title="遵循标准"></a>遵循标准</h3><p>PEP8标准</p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><p>条件判断 </p>
+<p>检查特定值在不在列表内</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">test=[1,2,3]</span><br><span class="line">1 in test</span><br></pre></td></tr></table></figure>
+<p>if-elif-else 结构</p>
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>字典是 键-值对  </p>
+<h4 id="添加键值对"><a href="#添加键值对" class="headerlink" title="添加键值对"></a>添加键值对</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">test=&#123;</span><br><span class="line">   &apos;1&apos;:1</span><br><span class="line">   &apos;2&apos;:2</span><br><span class="line">&#125;</span><br><span class="line">test[&apos;3&apos;]=3</span><br><span class="line">print(test)</span><br></pre></td></tr></table></figure>
+<h4 id="删除键值对"><a href="#删除键值对" class="headerlink" title="删除键值对"></a>删除键值对</h4><p>del test[‘3’]</p>
+<h4 id="遍历循环字典键值对"><a href="#遍历循环字典键值对" class="headerlink" title="遍历循环字典键值对"></a>遍历循环字典键值对</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">user_0 = &#123;</span><br><span class="line"> &apos;username&apos;: &apos;efermi&apos;,</span><br><span class="line"> &apos;first&apos;: &apos;enrico&apos;,</span><br><span class="line"> &apos;last&apos;: &apos;fermi&apos;,</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">for k,v in user_0.items():</span><br><span class="line">    print(k,&apos;:&apos;,v)</span><br></pre></td></tr></table></figure>
+<h4 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h4><p>set() 可让python找出列表独一无二的元素,并使用着些元素创建一个集合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">user_0 = &#123;</span><br><span class="line"> &apos;username&apos;: &apos;fermi&apos;,</span><br><span class="line"> &apos;first&apos;: &apos;enrico&apos;,</span><br><span class="line"> &apos;last&apos;: &apos;fermi&apos;,</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">for v in set(user_0.values()):</span><br><span class="line">    print(v)</span><br></pre></td></tr></table></figure>
+<h4 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">alien_0 = &#123;&apos;color&apos;: &apos;green&apos;, &apos;points&apos;: 5&#125;</span><br><span class="line">alien_1 = &#123;&apos;color&apos;: &apos;yellow&apos;, &apos;points&apos;: 10&#125;</span><br><span class="line">alien_2 = &#123;&apos;color&apos;: &apos;red&apos;, &apos;points&apos;: 15&#125;</span><br><span class="line">aliens = [alien_0, alien_1, alien_2]</span><br><span class="line">for alien in aliens:</span><br><span class="line"> print(alien)</span><br></pre></td></tr></table></figure>
+<h3 id="用户输入和while循环"><a href="#用户输入和while循环" class="headerlink" title="用户输入和while循环"></a>用户输入和while循环</h3><h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=input(&apos;请输入:&apos;)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<h4 id="求模运算符号"><a href="#求模运算符号" class="headerlink" title="求模运算符号%"></a>求模运算符号%</h4><p>求摸运算符不会指出一个数是另一个数的多少倍,而只指出余数是多少</p>
+<h4 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h4><p>break 语句可以立刻退出循环</p>
+<p>continue 语句跳过此次循环</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p><strong>init</strong> 每次你根据类创建新的实列,python都会自动运行它</p>
+<h4 id="根据类创建实例"><a href="#根据类创建实例" class="headerlink" title="根据类创建实例"></a>根据类创建实例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Dog():</span><br><span class="line">    def __init__(self,name,age):</span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    def sit(self):</span><br><span class="line">        print(self.name.title()+&apos;is now sitting&apos;)</span><br><span class="line">    def roll_over(self):</span><br><span class="line">        print(self.name.title()+&apos;rolled over&apos;)</span><br><span class="line"></span><br><span class="line">my_dog=Dog(&apos;willie&apos;,6)</span><br><span class="line">my_dog.sit()</span><br></pre></td></tr></table></figure>
+<p>根据实例 可以调用类的方法</p>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h4 id="类编码分隔"><a href="#类编码分隔" class="headerlink" title="类编码分隔"></a>类编码分隔</h4><p>类名采用驼峰命名法<br>实列名和模块名都采用小写格式并且在单词之间加上下划线</p>
+<h3 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h3><p><code>`</code><br>with open(‘pi.txt’) as file_object:<br>   s=file_object.read()<br>   print(s)</p>
 
           
         
@@ -370,7 +423,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -416,7 +469,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
