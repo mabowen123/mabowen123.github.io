@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/From Apprentice To Artisan/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/05/git命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/03/From Apprentice To Artisan/" itemprop="url">From Apprentice To Artisan</a></h1>
+                <a class="post-title-link" href="/2018/11/05/git命令/" itemprop="url">git命令</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-03T14:55:04+08:00">
-                2018-10-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T08:53:11+08:00">
+                2018-11-05
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/03/From Apprentice To Artisan/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/03/From Apprentice To Artisan/" itemprop="commentCount"></span>
+                <a href="/2018/11/05/git命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/05/git命令/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/10/03/From Apprentice To Artisan/" class="leancloud_visitors" data-flag-title="From Apprentice To Artisan">
+             <span id="/2018/11/05/git命令/" class="leancloud_visitors" data-flag-title="git命令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,25 +324,18 @@
       
         
           
-            <h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>laravel的基础是一个控制反转容器(Ioc),但是控制反转容器只是方便实现”依赖注入”的工具.需实现依赖注入并不一定需要控制反转容器,只是容器会更方便和容易一点</p>
-<p>####关注分离</p>
-<p>每一个类都应该又单独的职责,并且该职责应完全被这个类封装(不要让多个类负责相同的职责)</p>
-<h4 id="严守边界"><a href="#严守边界" class="headerlink" title="严守边界"></a>严守边界</h4><p>记得要保持清晰的责任边界。 控制器和路由是作为HTTP和你的应用程序之间的中间件来用的。当编写大型应用程序时，不要将你的领域逻辑混杂在其中（控制器、路由）。</p>
-<h4 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h4><p>接口中的所有方法都必须实现,倘若实现类没有实现所有方法,则必须声明为抽象类</p>
-<h4 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h4><p>解耦控制器与数据库,控制器不需要了解数据是从哪里来的,只需要这数据是可用的就行了,用接口的形式去解耦</p>
-<h4 id="不懂"><a href="#不懂" class="headerlink" title="??? 不懂"></a>??? 不懂</h4><p><a href="https://my.oschina.net/zgldh/blog/305556" target="_blank" rel="noopener">https://my.oschina.net/zgldh/blog/305556</a></p>
-<p>定义A,B两个接口,通过一个A类实现实现两个接口的使用,以A接口去实例B接口,如何调用,通过A类来注入让B类(已经实现B接口)去构造,在去new A类调用A接口 可以实现两个接口的使用</p>
-<p>是否这样?与写一个方法多次调用有什么区别?</p>
-<h4 id="使用接口"><a href="#使用接口" class="headerlink" title="使用接口"></a>使用接口</h4><p>写接口可能看上去挺麻烦，但实际上能加速你的开发。你不用实现任何接口，就能使用模拟库来模拟你的接口，进而测试整个后台逻辑！在大型接口使用接口可以提搞代码灵活性.</p>
-<h3 id="控制反转容器"><a href="#控制反转容器" class="headerlink" title="控制反转容器"></a>控制反转容器</h3><p>laravel框架拥有很强大的Ioc,Ioc容器使你更容易管理依赖注入,laravel的Application类就是继承的Container类</p>
-<p>控制反转容器使得依赖注入更方便,当一个类或接口在容器里定义以后,如何处理它们?如何应用中管理,注入这些对象,</p>
-<p>####门面实现方式?</p>
-<p>???</p>
-<h4 id="反射解决方案"><a href="#反射解决方案" class="headerlink" title="反射解决方案"></a>反射解决方案</h4><h3 id="接口约定"><a href="#接口约定" class="headerlink" title="接口约定"></a>接口约定</h3><p>在php,我们不必告诉一个方法需要什么类型的参数,实际上我们传递任何类型的对象都可以,只要这个对象能响应getId的调用,这里有关于鸭子类型(弱类型)的解释,如果有一个对象看上去是个user,方法响应也像个user,那他就是个user,</p>
-<h4 id="接口与团队开发"><a href="#接口与团队开发" class="headerlink" title="接口与团队开发"></a>接口与团队开发</h4><h4 id="服务提供者"><a href="#服务提供者" class="headerlink" title="服务提供者"></a>服务提供者</h4><p>一个服务提供者必须有一个register方法,你可以在这个方法里写ioC绑定得类,事实上,laravel有好几十个服务提供者,用于管理框架核心组件得容器绑定,几乎框架里每一个组件得ioC绑定都是靠服务提供者来做的。</p>
-<h3 id="应用结构"><a href="#应用结构" class="headerlink" title="应用结构"></a>应用结构</h3><p>优化应用得设计结构的关键就是责任划分,或者说是创建不同的责任层次.控制器只负责接受和响应HTTP请求然后调用合适的业务逻辑层的类,你的业务逻辑才是你真正的程序,你的程序包含读取数据,验证数据,执行支付,发送电子邮件,还有你程序里任何其他的功能.事实上你的领域逻辑层不需要知道任何关于网络的事情!网络仅仅是一个访问你程序的传输机制,关于网络和HTTP请求的一切不应该超出路由和控制器层.</p>
-<p>编写拥有高可维护性应用程序的关键之一，就是责任分割。要时常检查一个类是否管得太宽。你要常常问自己“这个类需不需要关心XXX呢？”如果答案是否定的，那么把这块逻辑抽出来放到另一个类里面，然后用依赖注入的方式进行处理</p>
-<h4 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h4><p>laravel 有一个文件里面都是辅助函数,</p>
+            <h4 id="回到远程仓库的状态"><a href="#回到远程仓库的状态" class="headerlink" title="回到远程仓库的状态"></a>回到远程仓库的状态</h4><p>抛弃本地所有修改,回到远程仓库的状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all &amp;&amp; git reset --hard origin/master</span><br></pre></td></tr></table></figure>
+<h4 id="重设第一个commit"><a href="#重设第一个commit" class="headerlink" title="重设第一个commit"></a>重设第一个commit</h4><p>也就是把所有改动都重新放回工作区,并清空所有的commit,这样就可以重新提交第一个commit</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git update -ref -d HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="快速切换分支"><a href="#快速切换分支" class="headerlink" title="快速切换分支"></a>快速切换分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<h4 id="展示本地分支关联远程仓库的情况"><a href="#展示本地分支关联远程仓库的情况" class="headerlink" title="展示本地分支关联远程仓库的情况"></a>展示本地分支关联远程仓库的情况</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -vv</span><br></pre></td></tr></table></figure>
+<h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -u origin/master</span><br></pre></td></tr></table></figure>
+<h4 id="列出本地和远程分支"><a href="#列出本地和远程分支" class="headerlink" title="列出本地和远程分支"></a>列出本地和远程分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
+<h4 id="创建并切换到远程分支"><a href="#创建并切换到远程分支" class="headerlink" title="创建并切换到远程分支"></a>创建并切换到远程分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b master origin/master</span><br></pre></td></tr></table></figure>
+<h4 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d master</span><br></pre></td></tr></table></figure>
+<h4 id="放弃所有修改"><a href="#放弃所有修改" class="headerlink" title="放弃所有修改"></a>放弃所有修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout .</span><br></pre></td></tr></table></figure>
+<p>####</p>
 
           
         
@@ -382,7 +375,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -428,7 +421,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
