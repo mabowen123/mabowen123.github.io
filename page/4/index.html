@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/12/均衡负载-mabowen/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/From Apprentice To Artisan/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/12/均衡负载-mabowen/" itemprop="url">均衡负载</a></h1>
+                <a class="post-title-link" href="/2018/10/03/From Apprentice To Artisan/" itemprop="url">From Apprentice To Artisan</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-12T14:19:55+08:00">
-                2018-09-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-03T14:55:04+08:00">
+                2018-10-03
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/12/均衡负载-mabowen/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/12/均衡负载-mabowen/" itemprop="commentCount"></span>
+                <a href="/2018/10/03/From Apprentice To Artisan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/03/From Apprentice To Artisan/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/09/12/均衡负载-mabowen/" class="leancloud_visitors" data-flag-title="均衡负载">
+             <span id="/2018/10/03/From Apprentice To Artisan/" class="leancloud_visitors" data-flag-title="From Apprentice To Artisan">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,32 +324,24 @@
       
         
           
-            <h3 id="什么是均衡负载"><a href="#什么是均衡负载" class="headerlink" title="什么是均衡负载"></a>什么是均衡负载</h3><p>早期的互联网应用,由于用户流量小,业务逻辑比较简单,往往一个服务器就能满足均衡负载,随着互联网的流量越来越大,稍微好一点的系统,访问量就非常大了,那么就算单台服务器性能优化的再好,也不能支撑这么大的用户量的访问压力</p>
-<p>此时就需要请出负载均衡器入场了  </p>
-<p>负载均衡是指把用户访问的流量,通过”负载均衡器”,根据某种转发的策略,均匀的分发到后端多台服务器上,后端的服务器可以独立的响应和处理请求,从而实现分散负债的效果.负载均衡技术提高了系统的服务能力,增强了应用的可用性</p>
-<h3 id="主流负载均衡方案有几种"><a href="#主流负载均衡方案有几种" class="headerlink" title="主流负载均衡方案有几种?"></a>主流负载均衡方案有几种?</h3><ol>
-<li><p>基于DNS负载均衡</p>
-</li>
-<li><p>基于硬件负载均衡:比如F5</p>
-</li>
-<li><p>基于软件负载均衡:比如Nginx,Squid</p>
-</li>
-</ol>
-<h4 id="基于DNS负载均衡"><a href="#基于DNS负载均衡" class="headerlink" title="基于DNS负载均衡"></a>基于DNS负载均衡</h4><p>其原理就是:当用户访问域名的时候,会先向DNS服务器去解析域名对应的IP地址,这个时候我们可以让DNS服务器根据不同地理位置的用户返回不同的IP.</p>
-<p>在这个模式下,用户就相当于实现了按照”就近原则”将请求分流了,既减轻了单个集群的负载压力,也提高了用户的访问速度</p>
-<p>使用DNS做负载均衡的方案,优势是配置简单,实现成本低</p>
-<h4 id="基于硬件负载均衡"><a href="#基于硬件负载均衡" class="headerlink" title="基于硬件负载均衡"></a>基于硬件负载均衡</h4><p>比如F5,他是一个网络设备,你可以理解为类似于网络交换机的东西,完全通过硬件来抗压力,性能是非常的好,每秒能处理请求达到百万级,采用硬件做负载均衡的话,主要就是省心省事,买一台就搞定,性能强大,一般的业务不在话下,而且在负载均衡的算法还支持很多灵活的策略,同时还具有一些防火墙等安全功能</p>
-<h4 id="基于软件负载均衡"><a href="#基于软件负载均衡" class="headerlink" title="基于软件负载均衡"></a>基于软件负载均衡</h4><p>软件负载均衡是指使用软件的方式来分发和均衡流量.软件负载均衡分为7层协议和4层协议</p>
-<p>网络协议有七层,基于第四层传输层来做流量分发的方案称为四层负载均衡,例如LVS;而基于第七层应用层来做流量分发的成为7层负载均衡,例如Nginx,这两种在性能和灵活性上是有区别的</p>
-<p>基于4层的负载均衡性能要高一点,一般能达到几十万/秒的处理量,而基于7层的负载均衡处理量一般只在几万/秒</p>
-<p>基于软件的负载均衡的特点也很明显,便宜.在正常的服务器上部署即可,无需额外采购,就是投入一点点技术去优化优化即可,因此这种方式是互联网公司中用的最多的方式了</p>
-<h4 id="常见的均衡算法有哪些"><a href="#常见的均衡算法有哪些" class="headerlink" title="常见的均衡算法有哪些"></a>常见的均衡算法有哪些</h4><ol>
-<li>轮询策略</li>
-<li>负载度策略</li>
-<li>响应策略</li>
-<li>哈希策略</li>
-</ol>
-<p><a href="https://my.oschina.net/u/3915715/blog/2049487" target="_blank" rel="noopener">详情</a></p>
+            <h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>laravel的基础是一个控制反转容器(Ioc),但是控制反转容器只是方便实现”依赖注入”的工具.需实现依赖注入并不一定需要控制反转容器,只是容器会更方便和容易一点</p>
+<h4 id="关注分离"><a href="#关注分离" class="headerlink" title="关注分离"></a>关注分离</h4><p>每一个类都应该又单独的职责,并且该职责应完全被这个类封装(不要让多个类负责相同的职责)</p>
+<h4 id="严守边界"><a href="#严守边界" class="headerlink" title="严守边界"></a>严守边界</h4><p>记得要保持清晰的责任边界。 控制器和路由是作为HTTP和你的应用程序之间的中间件来用的。当编写大型应用程序时，不要将你的领域逻辑混杂在其中（控制器、路由）。</p>
+<h4 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h4><p>接口中的所有方法都必须实现,倘若实现类没有实现所有方法,则必须声明为抽象类</p>
+<h4 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h4><p>解耦控制器与数据库,控制器不需要了解数据是从哪里来的,只需要这数据是可用的就行了,用接口的形式去解耦</p>
+<h4 id="不懂"><a href="#不懂" class="headerlink" title="??? 不懂"></a>??? 不懂</h4><p><a href="https://my.oschina.net/zgldh/blog/305556" target="_blank" rel="noopener">https://my.oschina.net/zgldh/blog/305556</a></p>
+<p>定义A,B两个接口,通过一个A类实现实现两个接口的使用,以A接口去实例B接口,如何调用,通过A类来注入让B类(已经实现B接口)去构造,在去new A类调用A接口 可以实现两个接口的使用</p>
+<p>是否这样?与写一个方法多次调用有什么区别?</p>
+<h4 id="使用接口"><a href="#使用接口" class="headerlink" title="使用接口"></a>使用接口</h4><p>写接口可能看上去挺麻烦，但实际上能加速你的开发。你不用实现任何接口，就能使用模拟库来模拟你的接口，进而测试整个后台逻辑！在大型接口使用接口可以提搞代码灵活性.</p>
+<h3 id="控制反转容器"><a href="#控制反转容器" class="headerlink" title="控制反转容器"></a>控制反转容器</h3><p>laravel框架拥有很强大的Ioc,Ioc容器使你更容易管理依赖注入,laravel的Application类就是继承的Container类</p>
+<p>控制反转容器使得依赖注入更方便,当一个类或接口在容器里定义以后,如何处理它们?如何应用中管理,注入这些对象,</p>
+<p>####门面实现方式?</p>
+<p>???</p>
+<h4 id="反射解决方案"><a href="#反射解决方案" class="headerlink" title="反射解决方案"></a>反射解决方案</h4><h3 id="接口约定"><a href="#接口约定" class="headerlink" title="接口约定"></a>接口约定</h3><p>在php,我们不必告诉一个方法需要什么类型的参数,实际上我们传递任何类型的对象都可以,只要这个对象能响应getId的调用,这里有关于鸭子类型(弱类型)的解释,如果有一个对象看上去是个user,方法响应也像个user,那他就是个user,</p>
+<h4 id="接口与团队开发"><a href="#接口与团队开发" class="headerlink" title="接口与团队开发"></a>接口与团队开发</h4><h4 id="服务提供者"><a href="#服务提供者" class="headerlink" title="服务提供者"></a>服务提供者</h4><p>一个服务提供者必须有一个register方法,你可以在这个方法里写ioC绑定得类,事实上,laravel有好几十个服务提供者,用于管理框架核心组件得容器绑定,几乎框架里每一个组件得ioC绑定都是靠服务提供者来做的。</p>
+<h3 id="应用结构"><a href="#应用结构" class="headerlink" title="应用结构"></a>应用结构</h3><p>优化应用得设计结构的关键就是责任划分,或者说是创建不同的责任层次.控制器只负责接受和响应HTTP请求然后调用合适的业务逻辑层的类,你的业务逻辑才是你真正的程序,你的程序包含读取数据,验证数据,执行支付,发送电子邮件,还有你程序里任何其他的功能.事实上你的领域逻辑层不需要知道任何关于网络的事情!网络仅仅是一个访问你程序的传输机制,关于网络和HTTP请求的一切不应该超出路由和控制器层.</p>
+<p>编写拥有高可维护性应用程序的关键之一，就是责任分割。要时常检查一个类是否管得太宽。你要常常问自己“这个类需不需要关心XXX呢？”如果答案是否定的，那么把这块逻辑抽出来放到另一个类里面，然后用依赖注入的方式进行处理</p>
+<h4 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h4><p>laravel 有一个文件里面都是辅助函数,</p>
 
           
         
@@ -389,7 +381,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -435,7 +427,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

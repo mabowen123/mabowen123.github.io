@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/From Apprentice To Artisan/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/php核心技术与最佳实践/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/03/From Apprentice To Artisan/" itemprop="url">From Apprentice To Artisan</a></h1>
+                <a class="post-title-link" href="/2018/10/21/php核心技术与最佳实践/" itemprop="url">php核心技术与最佳实践</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-03T14:55:04+08:00">
-                2018-10-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-21T14:42:20+08:00">
+                2018-10-21
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/03/From Apprentice To Artisan/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/03/From Apprentice To Artisan/" itemprop="commentCount"></span>
+                <a href="/2018/10/21/php核心技术与最佳实践/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/21/php核心技术与最佳实践/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/10/03/From Apprentice To Artisan/" class="leancloud_visitors" data-flag-title="From Apprentice To Artisan">
+             <span id="/2018/10/21/php核心技术与最佳实践/" class="leancloud_visitors" data-flag-title="php核心技术与最佳实践">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,24 +324,59 @@
       
         
           
-            <h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a>依赖注入</h2><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>laravel的基础是一个控制反转容器(Ioc),但是控制反转容器只是方便实现”依赖注入”的工具.需实现依赖注入并不一定需要控制反转容器,只是容器会更方便和容易一点</p>
-<h4 id="关注分离"><a href="#关注分离" class="headerlink" title="关注分离"></a>关注分离</h4><p>每一个类都应该又单独的职责,并且该职责应完全被这个类封装(不要让多个类负责相同的职责)</p>
-<h4 id="严守边界"><a href="#严守边界" class="headerlink" title="严守边界"></a>严守边界</h4><p>记得要保持清晰的责任边界。 控制器和路由是作为HTTP和你的应用程序之间的中间件来用的。当编写大型应用程序时，不要将你的领域逻辑混杂在其中（控制器、路由）。</p>
-<h4 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h4><p>接口中的所有方法都必须实现,倘若实现类没有实现所有方法,则必须声明为抽象类</p>
-<h4 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h4><p>解耦控制器与数据库,控制器不需要了解数据是从哪里来的,只需要这数据是可用的就行了,用接口的形式去解耦</p>
-<h4 id="不懂"><a href="#不懂" class="headerlink" title="??? 不懂"></a>??? 不懂</h4><p><a href="https://my.oschina.net/zgldh/blog/305556" target="_blank" rel="noopener">https://my.oschina.net/zgldh/blog/305556</a></p>
-<p>定义A,B两个接口,通过一个A类实现实现两个接口的使用,以A接口去实例B接口,如何调用,通过A类来注入让B类(已经实现B接口)去构造,在去new A类调用A接口 可以实现两个接口的使用</p>
-<p>是否这样?与写一个方法多次调用有什么区别?</p>
-<h4 id="使用接口"><a href="#使用接口" class="headerlink" title="使用接口"></a>使用接口</h4><p>写接口可能看上去挺麻烦，但实际上能加速你的开发。你不用实现任何接口，就能使用模拟库来模拟你的接口，进而测试整个后台逻辑！在大型接口使用接口可以提搞代码灵活性.</p>
-<h3 id="控制反转容器"><a href="#控制反转容器" class="headerlink" title="控制反转容器"></a>控制反转容器</h3><p>laravel框架拥有很强大的Ioc,Ioc容器使你更容易管理依赖注入,laravel的Application类就是继承的Container类</p>
-<p>控制反转容器使得依赖注入更方便,当一个类或接口在容器里定义以后,如何处理它们?如何应用中管理,注入这些对象,</p>
-<p>####门面实现方式?</p>
-<p>???</p>
-<h4 id="反射解决方案"><a href="#反射解决方案" class="headerlink" title="反射解决方案"></a>反射解决方案</h4><h3 id="接口约定"><a href="#接口约定" class="headerlink" title="接口约定"></a>接口约定</h3><p>在php,我们不必告诉一个方法需要什么类型的参数,实际上我们传递任何类型的对象都可以,只要这个对象能响应getId的调用,这里有关于鸭子类型(弱类型)的解释,如果有一个对象看上去是个user,方法响应也像个user,那他就是个user,</p>
-<h4 id="接口与团队开发"><a href="#接口与团队开发" class="headerlink" title="接口与团队开发"></a>接口与团队开发</h4><h4 id="服务提供者"><a href="#服务提供者" class="headerlink" title="服务提供者"></a>服务提供者</h4><p>一个服务提供者必须有一个register方法,你可以在这个方法里写ioC绑定得类,事实上,laravel有好几十个服务提供者,用于管理框架核心组件得容器绑定,几乎框架里每一个组件得ioC绑定都是靠服务提供者来做的。</p>
-<h3 id="应用结构"><a href="#应用结构" class="headerlink" title="应用结构"></a>应用结构</h3><p>优化应用得设计结构的关键就是责任划分,或者说是创建不同的责任层次.控制器只负责接受和响应HTTP请求然后调用合适的业务逻辑层的类,你的业务逻辑才是你真正的程序,你的程序包含读取数据,验证数据,执行支付,发送电子邮件,还有你程序里任何其他的功能.事实上你的领域逻辑层不需要知道任何关于网络的事情!网络仅仅是一个访问你程序的传输机制,关于网络和HTTP请求的一切不应该超出路由和控制器层.</p>
-<p>编写拥有高可维护性应用程序的关键之一，就是责任分割。要时常检查一个类是否管得太宽。你要常常问自己“这个类需不需要关心XXX呢？”如果答案是否定的，那么把这块逻辑抽出来放到另一个类里面，然后用依赖注入的方式进行处理</p>
-<h4 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h4><p>laravel 有一个文件里面都是辅助函数,</p>
+            <h3 id="面向对象思想的核心概念"><a href="#面向对象思想的核心概念" class="headerlink" title="面向对象思想的核心概念"></a>面向对象思想的核心概念</h3><h4 id="面向对象是什么"><a href="#面向对象是什么" class="headerlink" title="面向对象是什么?"></a>面向对象是什么?</h4><p>面向对象程序设计是一种程序设计范型,同时也是一种程序开发方法.他将对象作为程序的基本单元,将程序和数据封装其中,以提高软件的重要性,灵活性和可扩展性.</p>
+<p>面向对象是一种更高级,更抽象的思维方式,面向过程虽然也是一种抽象,当面向过程是一种基础的抽象,面向对象又是建立在面向过程之上的更高层次的抽象,因此对面向对象的理解也就不是那么容易了.</p>
+<h3 id="面向对象的”形”与”本”"><a href="#面向对象的”形”与”本”" class="headerlink" title="面向对象的”形”与”本”"></a>面向对象的”形”与”本”</h3><p>类是对象的抽象组织,对象是类的具体存在</p>
+<h4 id="对象的”形”"><a href="#对象的”形”" class="headerlink" title="对象的”形”"></a>对象的”形”</h4><p>要回答类与对象本质这个问题,我想可以先从”形”的角度来回答.本节以php为例,来探讨对象的”形”与”本”的问题</p>
+<p>类是我们对一组对象的描述.</p>
+<p>实例化,把抽象到具体的过程,一个类的设计需要能充分展现其最重要的属性和方法,并且能与其他事物.所以,一个类的设计需要能充分展现其最重要的属性和方法,并且能与其他事物区分,只又类本身又意义,从抽象到具体的实例化才会又意义</p>
+<h4 id="对象的”本”"><a href="#对象的”本”" class="headerlink" title="对象的”本”"></a>对象的”本”</h4><p>zvalue_value,就是php底层的变量类型,zend_object_value obj就是变量中的一个结构.</p>
+<p>对象在php中是使用一种zend_object_value结构体来存储的.</p>
+<h4 id="对象与数组"><a href="#对象与数组" class="headerlink" title="对象与数组"></a>对象与数组</h4><p>对象喝数组的区别在于:对象还有一个指针.指向他所属的类.</p>
+<h4 id="对象与类"><a href="#对象与类" class="headerlink" title="对象与类"></a>对象与类</h4><p>类是定义一系列属性和操作的模板,而对象则把属性进行具体化,然后交给类处理.</p>
+<p>对象就是数据,对象本身不包含方法.但是对象有一个”指针”指向一个类,这个类可以有方法.</p>
+<p>方法描述不同属性所导致的不同表现.</p>
+<p>类和对象是不可分割,有对象就必定有一个类和其对应,否则这个对象就成为没有亲人的孩子(除非是强制类型转换的object,此时php中一个称为”孤儿”stdClass类就会收留这个对象)</p>
+<h3 id="魔术方法的应用"><a href="#魔术方法的应用" class="headerlink" title="魔术方法的应用"></a>魔术方法的应用</h3><p>魔术方法是以”__”开头,具有特殊作用的一些方法,可以看作php的”语法糖”.php里的引用,sql等都属于语法糖.</p>
+<h4 id="set和get方法"><a href="#set和get方法" class="headerlink" title="set和get方法"></a><strong>set和</strong>get方法</h4><p>它们是php中的内置方法,有特殊含义.手册吧这两个方法归到重载.</p>
+<p>类中有私有属性,new这个类,对这个类的私有属性设置,可以调用<strong>set方法为私有属性复制,获取私有属性值会自动调用</strong>get方法.</p>
+<h4 id="call和callStatic方法"><a href="#call和callStatic方法" class="headerlink" title="__call和callStatic方法"></a>__call和callStatic方法</h4><p>当调用一个不可访问的方法时,__call会被调用,其中name参数是要调用的方法名称.arguments参数是一个数组,包含着传递给方法的参数.</p>
+<h4 id="toString方法"><a href="#toString方法" class="headerlink" title="_toString方法"></a>_toString方法</h4><p>如打印一个对象时，看看这个对象都有哪些属性，其值是什么，如果类定义了toString方法，就能在测试时，echo打印对象体，对象就会自动调用它所属类定义的toString方法，格式化输出这个对象所包含的数据</p>
+<h3 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h3><p>类与类之间有一种父与子的关系,子类继承父类的属性和方法,称为继承.在继承里,子类拥有父类的方法和属性,同时子类也可以有自己的方法和属性.</p>
+<p>final关键字,如果父类中的方法被声明为final,则子类无法覆盖该方法,如果一个类被声明final,则不能被继承</p>
+<p>traits既可以使单继承模式的语言获得多重继承的</p>
+<p>子类是一种特殊类型,而不只是父类的一个角色.</p>
+<p>子类扩展,而不是覆盖或者使父类的功能失效.</p>
+<p>底层代码多用组合,业务层代码多用继承.底层用组合可以提高效率,避免对象臃肿.业务层用继承可以提高灵活性,让业务使用更方便.</p>
+<h4 id="各种语言的多态"><a href="#各种语言的多态" class="headerlink" title="各种语言的多态"></a>各种语言的多态</h4><p>同一类的对象收到相同的信息时,会得到不同结果,而这个消息是不可预测的,多态,顾名思义,就是多种状态,也就是多种结果.</p>
+<h3 id="面向接口编程"><a href="#面向接口编程" class="headerlink" title="面向接口编程"></a>面向接口编程</h3><h4 id="接口的作用"><a href="#接口的作用" class="headerlink" title="接口的作用"></a>接口的作用</h4><p>接口定义一套规范,描述一个”物”的作用.要求如果现实中的”物”想成为可用,就必须实现这些基本功能</p>
+<h4 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h4><p>反射,直观理解就是根据到达地找到出发地和来源.反射指在php运行状态中,扩展分析php程序,导出或提取出关于类,方法,属性,参数等的详细信息,包括注释.这种动态获取信息以及动态调用对象方法的功能叫做反射API</p>
+<h4 id="反射有什么用"><a href="#反射有什么用" class="headerlink" title="反射有什么用"></a>反射有什么用</h4><p>反射可以用于文档生成,因此可以用它对文件里的类进行扫描,逐个生成描述文档.</p>
+<h3 id="异常和错误处理"><a href="#异常和错误处理" class="headerlink" title="异常和错误处理"></a>异常和错误处理</h3><p>把”描述在正常过程中做什么事的代码”和 “出了问题怎么办的代码”进行分离</p>
+<h4 id="如何使用异常处理机制"><a href="#如何使用异常处理机制" class="headerlink" title="如何使用异常处理机制"></a>如何使用异常处理机制</h4><p>在各种语言,异常和错误的概念是不一样的,在php里,遇到任何自身错误,而不是抛出异常,php一旦遇到非正常代码都会触发错误,而不是抛出异常</p>
+<h4 id="三种场景应用异常处理机制"><a href="#三种场景应用异常处理机制" class="headerlink" title="三种场景应用异常处理机制"></a>三种场景应用异常处理机制</h4><p>1.对程序的的悲观预测</p>
+<p>2.程序的需求和对业务的关注</p>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>类是一个动作和属性得模板,对象是数据得集合.结合php自身实际情况,着重讲述php里面向对象得一些比较模糊的知识点,包括魔术方法,接口,多态,类的复用,反射,异常机制等,接口是一种类型,从接口的实现讲述接口是怎么实现即插即用的</p>
+<h3 id="面对对象的设计原则"><a href="#面对对象的设计原则" class="headerlink" title="面对对象的设计原则"></a>面对对象的设计原则</h3><h4 id="面向对象设计的五大原则"><a href="#面向对象设计的五大原则" class="headerlink" title="面向对象设计的五大原则"></a>面向对象设计的五大原则</h4><p>面对对象设计的五大原则分别是单一责任原则,接口隔离原则,开放-封闭原则,替换原则,依赖倒置原则.这五大原则也是23种设计相关的设计原则</p>
+<h4 id="单一责任原则"><a href="#单一责任原则" class="headerlink" title="单一责任原则"></a>单一责任原则</h4><p>单一职责有两个含义:一个是避免相同的职责分散到不同的类中,另一个是避免一个类承担太多责任</p>
+<h5 id="为什么要遵守SRP-单一责任原则-呢"><a href="#为什么要遵守SRP-单一责任原则-呢" class="headerlink" title="为什么要遵守SRP(单一责任原则)呢"></a>为什么要遵守SRP(单一责任原则)呢</h5><ol>
+<li><p>可以减少类的耦合</p>
+</li>
+<li><p>提高类的复用性</p>
+</li>
+</ol>
+<h5 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h5><p>工厂模式允许你在代码执行时实例化对象,它之所以被成为工厂模式是因为它负责”生产”对象.</p>
+<h4 id="接口隔离原则"><a href="#接口隔离原则" class="headerlink" title="接口隔离原则"></a>接口隔离原则</h4><p>ISP(接口隔离原则)表明客户端不应该被强迫实现一些他们不会使用的接口,应该把胖接口中的方法分组然后用多个接口代替它每一个接口服务于一个子模块(简单来说就是使用多个专门的接口比使用单一接口要好的多)</p>
+<h4 id="ISP的主要观点"><a href="#ISP的主要观点" class="headerlink" title="ISP的主要观点"></a>ISP的主要观点</h4><p>1.一个类对另一个类的依赖性应当建立在最小的接口</p>
+<ol start="2">
+<li>客户端程序不应该依赖它不需要的接口方法</li>
+</ol>
+<h4 id="开放-封闭原则"><a href="#开放-封闭原则" class="headerlink" title="开放-封闭原则"></a>开放-封闭原则</h4><p>模块的行为是开放的,支持扩展的,而不是僵化的,对模块的功能进行扩展时,不应该影响或大规模的影响已有程序模块</p>
+<h4 id="如何遵守开放-封闭原则"><a href="#如何遵守开放-封闭原则" class="headerlink" title="如何遵守开放-封闭原则"></a>如何遵守开放-封闭原则</h4><p>实现开放-封闭原则的核心思想就是对抽象编程,而不对具体编程,因为抽象相对稳定,让类依赖于固定的抽象,这样的修改就是封闭的,而通过面向对象的继承喝对多态机制,可以实现对抽象体的继承,通过复写其方法来改变固有行为,实现新的扩展方法,所以对于扩展就是开放的</p>
+<h4 id="里氏替换原则-LSP"><a href="#里氏替换原则-LSP" class="headerlink" title="里氏替换原则(LSP)"></a>里氏替换原则(LSP)</h4><p>子类型必须能够替换他们的父类型,并出现父类能够出现的任何地方,它指导我们如何正确的进行继承和派生并合理的重用代码</p>
+<h4 id="依赖倒置原则"><a href="#依赖倒置原则" class="headerlink" title="依赖倒置原则"></a>依赖倒置原则</h4><p>简单得讲就是依赖关系倒置为依赖接口,具体概念是,上层模块不应该依赖于下层模块,他们共同依赖于一个抽象</p>
+<p>抽象不能依赖具体,具体应该依赖于抽象</p>
+<h3 id="一个面向对象留言板得实例"><a href="#一个面向对象留言板得实例" class="headerlink" title="一个面向对象留言板得实例"></a>一个面向对象留言板得实例</h3><p>107</p>
 
           
         
@@ -381,7 +416,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -427,7 +462,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
