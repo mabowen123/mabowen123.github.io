@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/13/markdown手册-mabowen/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/26/docker集群笔记-chenhuaiyuan/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/13/markdown手册-mabowen/" itemprop="url">Markdown 语法手册</a></h1>
+                <a class="post-title-link" href="/2018/06/26/docker集群笔记-chenhuaiyuan/" itemprop="url">docker swarm</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-13T16:34:29+08:00">
-                2018-06-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-26T15:24:49+08:00">
+                2018-06-26
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/13/markdown手册-mabowen/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/13/markdown手册-mabowen/" itemprop="commentCount"></span>
+                <a href="/2018/06/26/docker集群笔记-chenhuaiyuan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/26/docker集群笔记-chenhuaiyuan/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/06/13/markdown手册-mabowen/" class="leancloud_visitors" data-flag-title="Markdown 语法手册">
+             <span id="/2018/06/26/docker集群笔记-chenhuaiyuan/" class="leancloud_visitors" data-flag-title="docker swarm">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,74 +324,38 @@
       
         
           
-            <p>Markdown 可以嵌套html</p>
-<h3 id="斜体与粗体"><a href="#斜体与粗体" class="headerlink" title="斜体与粗体"></a>斜体与粗体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.*斜体*或者_斜体_</span><br><span class="line">2.**粗体**</span><br><span class="line">3.***加粗斜体***</span><br><span class="line">4.~~删除线~~</span><br></pre></td></tr></table></figure>
-<h4 id="显示效果"><a href="#显示效果" class="headerlink" title="显示效果:"></a>显示效果:</h4><ul>
-<li><em>这是一段斜体</em></li>
-<li><strong>这是一段粗体</strong></li>
-<li><strong><em>这是一段加粗斜体</em></strong></li>
-<li><del>这是一段删除线</del></li>
-</ul>
-<h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><h4 id="第一种写法"><a href="#第一种写法" class="headerlink" title="第一种写法:"></a>第一种写法:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.这是一个一级标题</span><br><span class="line">2.================</span><br><span class="line">3.</span><br><span class="line">4.这是一个二级标题</span><br><span class="line">5.----------------</span><br></pre></td></tr></table></figure>
-<h4 id="第二种写法"><a href="#第二种写法" class="headerlink" title="第二种写法:"></a>第二种写法:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.# 一级标题</span><br><span class="line">2.## 二级标题</span><br><span class="line">3.### 三级标题</span><br><span class="line">4.#### 四级标题</span><br></pre></td></tr></table></figure>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><h4 id="Markdown-支持两种形式的超链接语法-行内式与参考式"><a href="#Markdown-支持两种形式的超链接语法-行内式与参考式" class="headerlink" title="Markdown 支持两种形式的超链接语法:行内式与参考式"></a>Markdown 支持两种形式的超链接语法:行内式与参考式</h4><h4 id="行内式"><a href="#行内式" class="headerlink" title="行内式"></a>行内式</h4><h4 id="语法说明"><a href="#语法说明" class="headerlink" title="语法说明:"></a>语法说明:</h4><ul>
-<li><h5> []里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。<a href="链接地址 “链接标题”">链接文字</a>这样的形式。链接地址与链接标题前有一个空格。</h5>
+            <font style="float:right;">陈怀远</font>  
 
-
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.[百度](&apos;https://www.baidu.com/&apos;)</span><br><span class="line">2.[百度](&apos;https://www.baidu.com/&apos;&quot;百度&quot;)</span><br></pre></td></tr></table></figure>
-<p>显示效果<br> <a href="&#39;https://www.baidu.com/&#39;">百度</a><br> <a href="&#39;https://www.baidu.com/&#39;&quot;百度&quot;">百度</a></p>
-<h4 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h4><p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p>
-<p>语法说明：<br>参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p>
-<p>如果链接文字本身可以做为链接标记，你也可以写成[链接文字][]<br>[链接文字]：链接地址的形式，见代码的最后一行。<br>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3]</span><br><span class="line">2.[Leanote 笔记][2]是一个不错的[网站][]。</span><br><span class="line">3. [1]:http://www.google.com &quot;Google&quot;</span><br><span class="line">4. [2]:http://www.leanote.com &quot;Leanote&quot;</span><br><span class="line">5. [3]:http://http://blog.leanote.com/freewalk &quot;梵居闹市&quot;</span><br><span class="line">6. [网站]:http://http://blog.leanote.com/freewalk</span><br></pre></td></tr></table></figure>
-<p>显示效果:<br>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="noopener">Google</a>、<a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote</a>以及<a href="http://http://blog.leanote.com/freewalk" title="梵居闹市" target="_blank" rel="noopener">自己的博客</a><br><a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote 笔记</a>是一个不错的<a href="http://http://blog.leanote.com/freewalk" target="_blank" rel="noopener">网站</a>。</p>
-<h4 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h4><h5 id="语法说明-1"><a href="#语法说明-1" class="headerlink" title="语法说明:"></a>语法说明:</h5><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接[目录]。一般网址的链接文字就和链接地址一样，例如：<br>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.&lt;www.baidu.com&gt;</span><br><span class="line">2.&lt;610286632@qq.com&gt;</span><br></pre></td></tr></table></figure>
-<p>显示效果<br><a href="http://baidu.com/" target="_blank" rel="noopener">http://baidu.com/</a><br><a href="mailto:&#54;&#49;&#48;&#50;&#x38;&#54;&#54;&#x33;&#x32;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#54;&#49;&#48;&#50;&#x38;&#54;&#54;&#x33;&#x32;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用*,+,-表示无序列表.<br>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. - 无序列表</span><br><span class="line">2. + 无序列表</span><br><span class="line">3. * 无序列表</span><br></pre></td></tr></table></figure>
-<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>有序列表则使用数字接着一个英文句点。<br>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 有序列表项 </span><br><span class="line">2. 有序列表项 </span><br><span class="line">3. 有序列表项</span><br></pre></td></tr></table></figure>
-<p>显示效果:  </p>
-<ol>
-<li>有序列表项  </li>
-<li>有序列表项   </li>
-<li>有序列表项 </li>
-</ol>
-<h4 id="定义型列表"><a href="#定义型列表" class="headerlink" title="定义型列表"></a>定义型列表</h4><p>语法说明:<br>定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab)<br>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Markdown</span><br><span class="line">:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）</span><br><span class="line">代码块 2</span><br><span class="line">:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）</span><br><span class="line">        代码块（左侧有八个不可见的空格）</span><br></pre></td></tr></table></figure>
-<p>显示效果<br>Markdown<br>:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）</p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>语法说明:<br>引用需要在被引用的文本前加上&gt;符号<br>代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">*   阅读的方法:</span><br><span class="line"></span><br><span class="line">&gt; 1.   这是第一行列表项。</span><br><span class="line">&gt; 2.   这是第二行列表项。</span><br><span class="line">&gt; </span><br><span class="line">&gt; 给出一些例子代码：</span><br><span class="line">&gt; </span><br><span class="line">&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);</span><br><span class="line"></span><br><span class="line">允许偷懒只在整个段落前第一行加上&gt;:</span><br><span class="line">&gt; 打开书本</span><br><span class="line">打开电灯</span><br></pre></td></tr></table></figure>
-<p>显示效果:</p>
-<blockquote>
-<ol>
-<li>这是第一行列表项。</li>
-<li>这是第二行列表项。</li>
-</ol>
-<p>给出一些例子代码：</p>
-<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;); 
-</code></pre></blockquote>
-<p>允许偷懒只在整个段落前第一行加上&gt;:</p>
-<blockquote>
-<p>打开书本<br>打开电灯</p>
-</blockquote>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
-<p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">行内式:</span><br><span class="line">美丽花儿： </span><br><span class="line">![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg &quot;美丽花儿&quot;)</span><br><span class="line"></span><br><span class="line">参考式  </span><br><span class="line">美丽花儿：</span><br><span class="line">![美丽花儿][flower]</span><br><span class="line">[flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  &quot;美丽花儿&quot;</span><br></pre></td></tr></table></figure>
-<p>显示效果:<br>行内式<br>美丽花儿：<br><img src="http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg" alt="美丽花儿" title="美丽花儿"></p>
-<h3 id="注脚"><a href="#注脚" class="headerlink" title="注脚"></a>注脚</h3><p>语法说明：<br>在需要添加注脚的文字后加上脚注名字称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。<br>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
-<p>代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。</span><br><span class="line"></span><br><span class="line">[^1]:Markdown是一种纯文本标记语言</span><br><span class="line"></span><br><span class="line">[^2]:HyperText Markup Language 超文本标记语言</span><br><span class="line"></span><br><span class="line">[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文</span><br></pre></td></tr></table></figure>
-<p>显示效果:<br>使用 Markdown<a href="Markdown是一种纯文本标记语言">^1</a>可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote<a href="开源笔记平台，支持Markdown和笔记直接发为博文">^Le</a> 编辑器进行书写。</p>
-<p>[^2]:HyperText Markup Language 超文本标记语言</p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line">***</span><br><span class="line">*****</span><br><span class="line">- - -</span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
-<p>显示效果都一样：</p>
-<hr>
-<hr>
+<p><br><br>下面内容随便写的，想到什么就写什么，所以很凌乱，如果打算接触docker swarm 的可以看看，说不定对你有帮助，如有实在想不通的地方可以亲自问本人。  </p>
+<p>当一个线上业务做到一定程度的时候，服务器过度负载的时候，就必须通过增加服务器来缓解另外服务器的压力，提高性能。 这个时候，问题来了，如何让多台服务器实现高可用呢？</p>
+<p>答案就是集群，给所有服务器做集群。  </p>
+<h3 id="创建集群"><a href="#创建集群" class="headerlink" title="创建集群"></a>创建集群</h3><p>在docker中我们可以用swarm。<br>首先我们准备至少两台服务器，拿其中的一台服务器作为leader，在这台服务器上运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker swarm init</span><br><span class="line">// or</span><br><span class="line">docker swarm init --advertise-addr 192.168.x.x</span><br></pre></td></tr></table></figure>
+<p>它会生成对应的token，类似于这样的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker swarm join --token \</span><br><span class="line">    SWMTKN-1-3z5rzoey0u6onkvvm58f7vgkser5d7z8sfshlu7s4oz2gztlvj-c036gwrakjejql06klrfc585r \</span><br><span class="line">    192.168.x.x:2377</span><br></pre></td></tr></table></figure>
+<p>如果你忘了leader上的token值，可以通过下面命令查看</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker swarm join-token manager</span><br></pre></td></tr></table></figure>
+<p>这里有个需要注意的地方，不要忘了开启服务器对应的端口，docker swarm默认端口是2377</p>
+<h3 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h3><p>我们可以把刚刚生成的token放到另一台服务器里面，在另一台服务器执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker swarm join --token \</span><br><span class="line">    SWMTKN-1-3z5rzoey0u6onkvvm58f7vgkser5d7z8sfshlu7s4oz2gztlvj-c036gwrakjejql06klrfc585r \</span><br><span class="line">    192.168.x.x:2377</span><br></pre></td></tr></table></figure>
+<p>这个时候可以说我们的集群已经创好了，我们可以通过在leader服务器上运行<figure class="highlight docker"><figcaption><span>node ls``` 来查看</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">### 创建服务 </span></span><br><span class="line"></span><br><span class="line">接下来我们可以创建我们想要的服务，例如</span><br></pre></td></tr></table></figure></p>
+<p>docker service create –name test –replicas 2 nginx:alpine<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">当然我们也可以通过docker compose来创建服务，我们可以自己写一个docker-compose.yml文件，例如：</span><br></pre></td></tr></table></figure></p>
+<p>version: ‘3.2’<br>services:<br>  php-fpm:<br>    image: php:fpm-alpine<br>    volumes:</p>
+<pre><code>  - ./html:/data/www/html
+container_name: php-fpm
+</code></pre><p>  nginx:<br>    image: nginx:alpine<br>    volumes:</p>
+<pre><code>  - ./nginx.cnf:/etc/nginx/conf.d
+  - ./html:/data/www/html
+ports:
+  - &quot;80:80&quot;
+container_name: nginx
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">这里需要注意的是docker compose只有版本3才支持swarm,还有就是volumes所对应的目录必须在另一台服务器上也有，要不然会出现两个应用容器都装在leader服务器上，再需要注意的是两台服务器上必须都要有相对应的容器镜像，要不然会创建失败，我们可以通过</span><br><span class="line">```docker compose pull``` 来拉取</span><br><span class="line"></span><br><span class="line">这些工作做完之后我们就可以部署了，命令如下</span><br></pre></td></tr></table></figure>
+<p>docker stack deploy -c docker-compose.yml test<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">它会自动把两个容器部署到两台服务器上，让人感觉就像是在一台服务器上一样。  </span><br><span class="line">注意：在创建集群的时候最好是内网服务器集群，不要用不同网络的，不同网络会出现另一台服务器部署失败  </span><br><span class="line"></span><br><span class="line">我们可以通过scale来修改容器数量</span><br></pre></td></tr></table></figure></p>
+<p>docker service scale service_name=2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">它会自动部署到服务器上</span><br><span class="line"></span><br><span class="line">它默认会自动创建一个网络，如果想要自己定义，可以在docker compose里面定义</span><br><span class="line"></span><br><span class="line">### 删除服务</span><br><span class="line"></span><br><span class="line">如果我们想要删除服务可以运行以下命令</span><br></pre></td></tr></table></figure></p>
+<p>docker service rm service_name<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 脱离集群</span><br><span class="line"></span><br><span class="line">如果我们想要脱离集群，我们可以运行以下命令：</span><br></pre></td></tr></table></figure></p>
+<p>docker swarm leave<br>// or<br>docker swarm leave –force<br><code>`</code></p>
+<p>这里说一点，最新版的 Swarm 提供自动服务发现与集群负载功能。</p>
+<p>关于docker swarm，我就先写那么多。如有时间，再完善。</p>
 
           
         
@@ -431,7 +395,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/14/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -477,7 +441,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -518,7 +482,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

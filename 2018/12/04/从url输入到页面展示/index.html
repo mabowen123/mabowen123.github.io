@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/Swy3U451WPE8jSJqeInahMUhwCbCkkQjsEnh7iaHQut77n2aoONFia7lpEFwZCOyIr4c4iarPDgtk7x7j5AXRhgdw/640?wx_fmt=jpeg">
 <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/Swy3U451WPE8jSJqeInahMUhwCbCkkQjjYeB5Oh5VLrb9sxebdnXQBnoS6zcGDFf7kXPk0P5zMZaZ3wQIt6v6g/640?wx_fmt=jpeg">
 <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/Swy3U451WPE8jSJqeInahMUhwCbCkkQjmkx1ZyoibwqdDq6vpCFwDbpkcyUBbFM1bMVNaJbe5RPBWFkPrAoJs7g/640?wx_fmt=jpeg">
-<meta property="og:updated_time" content="2018-12-04T03:22:25.429Z">
+<meta property="og:updated_time" content="2018-12-04T04:54:27.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从URL输入到页面展现到底发生什么">
 <meta name="twitter:description" content="打开浏览器从输入网址到网页呈现在大家面前，背后到底发生了什么？经历怎么样的一个过程?  总体来说分以下过程  DNS解析:将域名解析成ip地址 TCP连接:TCP三次握手 发送http请求 服务器处理请求并返回HTTP报文 浏览器解析渲染 断开连接:TCP四次握手  一. URL到底是啥 URL（Uniform Resource Locator），统一资源定位符，用于定位互联网上资源，俗称网址。">
@@ -409,11 +409,11 @@
 <p>2.MVC 后台处理阶段</p>
 <p>后台开发现在有很多框架，但大部分都还是按照 MVC 设计模式进行搭建的。</p>
 <p>MVC 是一个设计模式，将应用程序分成三个核心部件：模型（model）– 视图（view）–控制器（controller），它们各自处理自己的任务，实现输入、处理和输出的分离。<br><img src="http://mmbiz.qpic.cn/mmbiz_jpg/Swy3U451WPE8jSJqeInahMUhwCbCkkQjLYCEqgPdEq6ecQwBJrTvrEj7icQd5eWVtzNUWAkDCAARQLJvAjk09cA/640?wx_fmt=jpeg" alt=""></p>
-<p>（1）、视图（view）</p>
+<p>1.视图（view）</p>
 <p>它是提供给用户的操作界面，是程序的外壳。</p>
-<p>（2）、模型（model）</p>
+<p>2.模型（model）</p>
 <p>模型主要负责数据交互。在 MVC 的三个部件中，模型拥有最多的处理任务。一个模型能为多个视图提供数据。</p>
-<p>（3）、控制器（controller）</p>
+<p>3.控制器（controller）</p>
 <p>它负责根据用户从”视图层”输入的指令，选取”模型层”中的数据，然后对其进行相应的操作，产生最终结果。**控制器属于管理者角色，从视图接收请求并决定调用哪个模型构件去处理请求，然后再确定用哪个视图来显示模型处理返回的数据。</p>
 <p>这三层是紧密联系在一起的，但又是互相独立的，每一层内部的变化不影响其他层。每一层都对外提供接口（Interface），供上面一层调用。</p>
 <p>至于这一阶段发生什么？简而言之，首先浏览器发送过来的请求先经过控制器，控制器进行逻辑处理和请求分发，接着会调用模型，这一阶段模型会获取 redis db 以及 MySQL 的数据，获取数据后将渲染好的页面，响应信息会以响应报文的形式返回给客户端，最后浏览器通过渲染引擎将网页呈现在用户面前。</p>
@@ -486,6 +486,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/12/27/sql/" rel="prev" title="Mysql学习">
+                Mysql学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -555,7 +559,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -596,7 +600,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
