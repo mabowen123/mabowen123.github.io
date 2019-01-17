@@ -330,44 +330,66 @@
 <li><p>stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感) </p>
 </li>
 <li><p>strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感)</p>
-<pre><code>1. string  必需,规定要搜索的字符串
-2. find  必需,规定要查找的字符串  
-3. start 可选,从何处开始搜索  
-4. return 字符串在另一个字符串第一次出现的位置,没有找到返回false
+<pre><code>1.string  必需,规定要搜索的字符串
+2.find  必需,规定要查找的字符串  
+3.start 可选,从何处开始搜索  
+4.return 字符串在另一个字符串第一次出现的位置,没有找到返回false
 </code></pre></li>
 <li><p>strstr(string,search,before_search):string 搜索字符串在另一字符串中的第一次出现(对大小写敏感)  </p>
-<pre><code>1.  string 必需,规定要搜索的字符串
-2.  search 必需,规定所搜索的字符串
-3.  before_search 可选,默认false, 如果是true,则返回search参数之前第一次出现的字符串部分
-4.  return 字符串剩余部分,如果没有找到则返回false
+<pre><code>1.string 必需,规定要搜索的字符串
+2.search 必需,规定所搜索的字符串
+3.before_search 可选,默认false, 如果是true,则返回search参数之前第一次出现的字符串部分
+4.return 字符串剩余部分,如果没有找到则返回false
 </code></pre></li>
 <li><p>strrchr(string,char):string 查找字符串在另一个字符串中最后一次出现的位置</p>
-<pre><code>1. string 必需,规定要搜索的字符串
-2. char 必需,规定要查找的字符串
-3. return 从某个字符串在另一个字符串最后一次出现的位置到主字符串结尾的所有字符串,没有找到则返回false
+<pre><code>1.string 必需,规定要搜索的字符串
+2.char 必需,规定要查找的字符串
+3.return 从某个字符串在另一个字符串最后一次出现的位置到主字符串结尾的所有字符串,没有找到则返回false
 </code></pre></li>
 </ul>
 <h4 id="2019-1-16"><a href="#2019-1-16" class="headerlink" title="2019/1/16"></a>2019/1/16</h4><ul>
 <li><p>iconv(in_charset,out_charset,string):string 将字符串string从in_charset转换编码到out_charset</p>
-<pre><code>1. in_charset  必需,输入的字符集
-2. out_charset 必需,输出的字符集
-3. string 要转化的字符串
-4. return 转换后的字符串,失败返回false
+<pre><code>1.in_charset  必需,输入的字符集
+2.out_charset 必需,输出的字符集
+3.string 要转化的字符串
+4.return 转换后的字符串,失败返回false
 </code></pre></li>
 <li><p>uniqid(prefix,more_entropy):string  </p>
-<pre><code>1. prefix 前缀,为空返回长度13的字符串,more_entropy为true,返回23的字符串
-2. more_entropy 为true,使得id更具有唯一性
-3. return 一个带前缀,基于当前时间微秒生成得唯一ID
+<pre><code>1.prefix 前缀,为空返回长度13的字符串,more_entropy为true,返回23的字符串
+2.more_entropy 为true,使得id更具有唯一性
+3.return 一个带前缀,基于当前时间微秒生成得唯一ID
 </code></pre></li>
 <li><p>gettype(var):string 获取php变量的类型</p>
 </li>
 <li><p>settype(var,type):bool 设置php变量的类型</p>
-<pre><code>1. var 要转化的变量
-2. type 要变成的类型
-3. return 成功返回true,失败false
+<pre><code>1.var 要转化的变量
+2.type 要变成的类型
+3.return 成功返回true,失败false
 </code></pre></li>
 <li><p>getcwd():string 返回当前工作区目录</p>
 </li>
+</ul>
+<h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
+<li><p>array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名</p>
+<pre><code>1.array 一个数组
+2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部
+3.strict 严格比较(===)
+4.return 键名
+</code></pre></li>
+<li><p>array_values(array):array 返回数组中的值并给其建数字索引</p>
+</li>
+<li><p>array_merge(array,array,…):array 合并一个或多个数组</p>
+<pre><code>1.array 合并的数组,可多个
+ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖前面的值；如果想让前面的值覆盖后面，则可以使用 + 号,如果是数字键名,后面的值不会覆盖原来的值,而是附加到后面
+</code></pre></li>
+<li><p>str_shuffle(string):string 随机打乱一个数组</p>
+<pre><code>1.要打乱的字符串
+2.return 打乱后的字符串
+</code></pre></li>
+<li><p>shuffle(array):bool 打乱数组</p>
+<pre><code>1. array 待操作的数组
+2. return 成功返回true 失败false
+</code></pre></li>
 </ul>
 
           
