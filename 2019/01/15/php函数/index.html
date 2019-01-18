@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="2019/1/15 strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)     stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感)   strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感) 1.string  必需,规定要搜索的字">
+<meta name="description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP函数">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/php函数/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="2019/1/15 strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)     stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感)   strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感) 1.string  必需,规定要搜索的字">
+<meta property="og:description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-17T02:43:21.337Z">
+<meta property="og:updated_time" content="2019-01-18T05:08:06.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP函数">
-<meta name="twitter:description" content="2019/1/15 strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)     stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感)   strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感) 1.string  必需,规定要搜索的字">
+<meta name="twitter:description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
 
 
 
@@ -320,27 +320,26 @@
       
 
       
-        <h4 id="2019-1-15"><a href="#2019-1-15" class="headerlink" title="2019/1/15"></a>2019/1/15</h4><ul>
-<li><p>strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)   </p>
-</li>
-<li><p>stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感) </p>
-</li>
-<li><p>strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感)</p>
-<pre><code>1.string  必需,规定要搜索的字符串
-2.find  必需,规定要查找的字符串  
-3.start 可选,从何处开始搜索  
-4.return 字符串在另一个字符串第一次出现的位置,没有找到返回false
+        <h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
+<li><p>array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名</p>
+<pre><code>1.array 一个数组
+2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部
+3.strict 严格比较(===)
+4.return 键名
 </code></pre></li>
-<li><p>strstr(string,search,before_search):string 搜索字符串在另一字符串中的第一次出现(对大小写敏感)  </p>
-<pre><code>1.string 必需,规定要搜索的字符串
-2.search 必需,规定所搜索的字符串
-3.before_search 可选,默认false, 如果是true,则返回search参数之前第一次出现的字符串部分
-4.return 字符串剩余部分,如果没有找到则返回false
+<li><p>array_values(array):array 返回数组中的值并给其建数字索引</p>
+</li>
+<li><p>array_merge(array,array,…):array 合并一个或多个数组</p>
+<pre><code>1.array 合并的数组,可多个
+ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖前面的值；如果想让前面的值覆盖后面，则可以使用 + 号,如果是数字键名,后面的值不会覆盖原来的值,而是附加到后面
 </code></pre></li>
-<li><p>strrchr(string,char):string 查找字符串在另一个字符串中最后一次出现的位置</p>
-<pre><code>1.string 必需,规定要搜索的字符串
-2.char 必需,规定要查找的字符串
-3.return 从某个字符串在另一个字符串最后一次出现的位置到主字符串结尾的所有字符串,没有找到则返回false
+<li><p>str_shuffle(string):string 随机打乱一个数组</p>
+<pre><code>1.要打乱的字符串
+2.return 打乱后的字符串
+</code></pre></li>
+<li><p>shuffle(array):bool 打乱数组</p>
+<pre><code>1. array 待操作的数组
+2. return 成功返回true 失败false
 </code></pre></li>
 </ul>
 <h4 id="2019-1-16"><a href="#2019-1-16" class="headerlink" title="2019/1/16"></a>2019/1/16</h4><ul>
@@ -365,26 +364,27 @@
 <li><p>getcwd():string 返回当前工作区目录</p>
 </li>
 </ul>
-<h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
-<li><p>array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名</p>
-<pre><code>1.array 一个数组
-2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部
-3.strict 严格比较(===)
-4.return 键名
-</code></pre></li>
-<li><p>array_values(array):array 返回数组中的值并给其建数字索引</p>
+<h4 id="2019-1-15"><a href="#2019-1-15" class="headerlink" title="2019/1/15"></a>2019/1/15</h4><ul>
+<li><p>strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)   </p>
 </li>
-<li><p>array_merge(array,array,…):array 合并一个或多个数组</p>
-<pre><code>1.array 合并的数组,可多个
-ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖前面的值；如果想让前面的值覆盖后面，则可以使用 + 号,如果是数字键名,后面的值不会覆盖原来的值,而是附加到后面
+<li><p>stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感) </p>
+</li>
+<li><p>strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感)</p>
+<pre><code>1.string  必需,规定要搜索的字符串
+2.find  必需,规定要查找的字符串  
+3.start 可选,从何处开始搜索  
+4.return 字符串在另一个字符串第一次出现的位置,没有找到返回false
 </code></pre></li>
-<li><p>str_shuffle(string):string 随机打乱一个数组</p>
-<pre><code>1.要打乱的字符串
-2.return 打乱后的字符串
+<li><p>strstr(string,search,before_search):string 搜索字符串在另一字符串中的第一次出现(对大小写敏感)  </p>
+<pre><code>1.string 必需,规定要搜索的字符串
+2.search 必需,规定所搜索的字符串
+3.before_search 可选,默认false, 如果是true,则返回search参数之前第一次出现的字符串部分
+4.return 字符串剩余部分,如果没有找到则返回false
 </code></pre></li>
-<li><p>shuffle(array):bool 打乱数组</p>
-<pre><code>1. array 待操作的数组
-2. return 成功返回true 失败false
+<li><p>strrchr(string,char):string 查找字符串在另一个字符串中最后一次出现的位置</p>
+<pre><code>1.string 必需,规定要搜索的字符串
+2.char 必需,规定要查找的字符串
+3.return 从某个字符串在另一个字符串最后一次出现的位置到主字符串结尾的所有字符串,没有找到则返回false
 </code></pre></li>
 </ul>
 
@@ -536,7 +536,7 @@ ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">1.</span> <span class="nav-text">2019/1/15</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">2.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">3.</span> <span class="nav-text">2019/1/17</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">1.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">2.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">3.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">4.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
             
 
           </div>
