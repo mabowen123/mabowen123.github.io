@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
+<meta name="description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP函数">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/php函数/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
+<meta property="og:description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-18T05:08:06.348Z">
+<meta property="og:updated_time" content="2019-01-18T06:20:07.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP函数">
-<meta name="twitter:description" content="2019/1/182019/1/17 array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名 1.array 一个数组 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部 3.strict 严格比较(===) 4.return 键名  array_values(array):array">
+<meta name="twitter:description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
 
 
 
@@ -320,7 +320,34 @@
       
 
       
-        <h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
+        <h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><ul>
+<li><p>is_numeric(var):bool 检测变量是否为数字或者数字字符串</p>
+</li>
+<li><p>array_column(array,column_key,index_key):array 返回数组中指定的一列</p>
+<pre><code>1.array 需要取出数组列的多维数组
+2.column_key 需要返回值得列,如果是null,返回整个数组
+3.index_key 返回数组得索引/键得列
+4.return 从多维数组返回单列数组
+</code></pre></li>
+<li><p>array_search(needle,haystack,strict):mixed 在数组中搜索给定的值，如果成功则返回首个相应的键名</p>
+<pre><code>1.needle 待搜索得值
+2.haystack 待搜索得数组
+3.strict 严格比较(===)
+4.return 如果找到needle 则返回他的键,否则false
+</code></pre></li>
+<li><p>in_array(needle,haystack,strict):bool 检查数组中是否存在某一个值</p>
+<pre><code>1.needle 待搜索得值
+2.haystack 待搜索得数组
+3.strict 严格比较(===)
+4.return 找到返回true,失败返回false
+</code></pre></li>
+<li><p>array_unique(array,sort_flags):array 移除数组中重复得值</p>
+<pre><code>1.array 输入得数组
+2.sort_flags 可选参数sort_flags 可用于修改排序得行为
+3.return 返回过滤后的数组
+</code></pre></li>
+</ul>
+<h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
 <li><p>array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名</p>
 <pre><code>1.array 一个数组
 2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部
