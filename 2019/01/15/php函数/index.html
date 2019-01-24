@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
+<meta name="description" content="2019/1/23 array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值 1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型 2.values 将作为array的值 3.return 合并的array,如果两个数组的单元数不同则返回false  array_count_values(array):array 统计数组中">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP函数">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/php函数/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
+<meta property="og:description" content="2019/1/23 array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值 1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型 2.values 将作为array的值 3.return 合并的array,如果两个数组的单元数不同则返回false  array_count_values(array):array 统计数组中">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-18T06:20:07.821Z">
+<meta property="og:updated_time" content="2019-01-24T11:15:26.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP函数">
-<meta name="twitter:description" content="2019/1/18 is_numeric(var):bool 检测变量是否为数字或者数字字符串  array_column(array,column_key,index_key):array 返回数组中指定的一列 1.array 需要取出数组列的多维数组 2.column_key 需要返回值得列,如果是null,返回整个数组 3.index_key 返回数组得索引/键得列 4.return 从多维">
+<meta name="twitter:description" content="2019/1/23 array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值 1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型 2.values 将作为array的值 3.return 合并的array,如果两个数组的单元数不同则返回false  array_count_values(array):array 统计数组中">
 
 
 
@@ -320,7 +320,136 @@
       
 
       
-        <h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><ul>
+        <h4 id="2019-1-23"><a href="#2019-1-23" class="headerlink" title="2019/1/23"></a>2019/1/23</h4><ul>
+<li><p>array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值</p>
+<pre><code>1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型
+2.values 将作为array的值
+3.return 合并的array,如果两个数组的单元数不同则返回false
+</code></pre></li>
+<li><p>array_count_values(array):array 统计数组中所有的值</p>
+<pre><code>1.array 统计这个数组的值
+2.return 一个关联数组,用array里数组中的值作为键名,该值在数组中出现的次数为值
+</code></pre></li>
+<li><p>array_diff_assoc(array,…array):array  带索引检查计数的差集</p>
+<pre><code>1.return 一个数组,该数组包含第一个数组中不存在于任何其他数组中的所有值
+</code></pre></li>
+<li><p>array_diff_key(array,…array):array 使用键名比较计算数组的差集</p>
+<pre><code>1.return 一个数组,该数组包含所有出现在第一个数组但是未出现在任何其他参数数组中的键的值
+</code></pre></li>
+<li><p>array_diff_uassoc 用用户提供的回调函数做索引检查来计算数组的差集</p>
+<h4 id="2019-1-22"><a href="#2019-1-22" class="headerlink" title="2019/1/22"></a>2019/1/22</h4></li>
+<li><p>array_filter(array,callback,falg):array 用回调函数过滤数组中的单元</p>
+<pre><code>1.array 要循环的数组
+2.callback 使用的回调函数
+3.flag 决定callback接收的参数形式
+    1.ARRAY_FILTER_USE_KEY - callback接受键名作为的唯一参数
+    2.ARRAY_FILTER_USE_BOTH - callback同时接受键名和键值
+4.return 过滤后的数组
+</code></pre></li>
+<li><p>array_unshift(array,…):int 在数组开头插入一个或多个单元</p>
+<pre><code>1.return array数组新的单元数目
+</code></pre></li>
+<li><p>array_shift (array):mixed 将数组开头的单元移除数组</p>
+<pre><code>1.return 移出的值,如果array为空或者不是一个数组返回null
+</code></pre></li>
+<li><p>array_pop(array):mixed 弹出数组最后一个单元(出栈)</p>
+<pre><code>1.array 需要弹出栈的数组
+2.return array的最后一个值,如果array为空或者不是一个数组,返回null
+</code></pre></li>
+<li><p>array_push(array,value,…value):int 将一个或多个单元压入数组的末尾(入栈)</p>
+<pre><code>1.array 输入的数组
+2.value 压入array末尾的第一个值
+3.return 处理之后数组的元素个数
+</code></pre></li>
+</ul>
+<h4 id="2019-1-21"><a href="#2019-1-21" class="headerlink" title="2019/1/21"></a>2019/1/21</h4><ul>
+<li><p>array_fill(start_index,num.value):array 用给定的值填充数组</p>
+<pre><code>1.start_index 返回数组的第一个索引值
+2.num 插入元素的数量,必须大于或等于0
+3.value 用来填充的值
+4.return 填充后的数组
+</code></pre></li>
+<li><p>array_chunk(array,size,preserve_keys):array 将一个数组分割成多个</p>
+<pre><code>1.array 需要操作的数组
+2.size 每个数组的单元数目
+3.preserve_keys 为true可以保留原来的key,如果为false,重置索引,默认false
+4.return 得到的数组是一个多维数组中的单元
+</code></pre></li>
+<li><p>array_slice(array,offset,length,preserve_keys):array 从数组中取出一段</p>
+</li>
+</ul>
+<pre><code>1.array 输入的数组
+2.offset 如果 offset 非负，则序列将从 array 中的此偏移量开始。如果 offset 为负，则序列将从 array 中距离末端这么远的地方开始
+3.length 从offset开始的长度
+4.preserve_keys 默认会重置数组的索引,为true不重置
+5.return 其中的一段,如果offset参数大于array尺寸,就会返回空的array
+</code></pre><ul>
+<li><p>array_diff(array,…array):array 计算数组的差集</p>
+<pre><code>1.return 一个数组,该数组包含所有在第一个array,但是不在其他任何参数数组的值
+</code></pre></li>
+<li><p>array_intersect(array,…array):array计算数组的交集 </p>
+<pre><code>1.return 一个数组,该数组包含了所有在第一个数组中也同时出现在其他参数数组的值
+</code></pre></li>
+</ul>
+<h4 id="2019-1-20"><a href="#2019-1-20" class="headerlink" title="2019/1/20"></a>2019/1/20</h4><ul>
+<li><p>strip_tags(string,allowable_tags):string 从字符串中除去html和php标记</p>
+<pre><code>1.string 输入字符串
+2.allowable_tags 使用可选的第二个参数指定不被去除的字符串列表
+3.return 处理后的字符串
+</code></pre></li>
+<li><p>explode(delimter,string,limit):array 使用一个字符串分割另一个字符串</p>
+<pre><code>1.delimiter 边界上的分隔字符
+2.string 输入的字符串
+3.limit 如果为正数,则返回数组最多包含limit个元素,而最后那个元素包含string的剩下部分
+4.return 此函数返回由字符串组合的array,每个元素都是string的一个子串,如果delimiter为空字符串,返回false
+</code></pre></li>
+<li><p>implode(glue,pieces):string  将一个一维数组的值转化为字符串</p>
+<pre><code>1.glue 默认为空的字符串
+2.pieces 你想要转化的数组
+3.return 字符串,其内容为由glue分割开的数组的值
+</code></pre></li>
+</ul>
+<ul>
+<li><p>substr(string,start,length):string 返回字符串的子串</p>
+<pre><code>1.string 输入字符串,必须至少有一个字符
+2.start 返回的字符串从string的start位置开始
+3.length 从start开始的截取的长度
+4.提取的子字符串,失败返回false
+</code></pre></li>
+<li><p>str_word_count(string,format,charlist):mixed 返回字符串中单词的使用情况</p>
+<pre><code>1.string 字符串
+2.format 指定函数的返回值
+    0 - 返回单词的数量
+    1 - 返回一个包含string中全部单词的数组
+    2 - 返回关联数组,key是单词在string中出现的数值位置,value 是这个单词
+3.charlist 附加的字符串,其中的字符串也被视为单词的一部分
+4.return 返回一个数组或整型数,取决于format参数的选择
+</code></pre></li>
+</ul>
+<h4 id="2019-1-19"><a href="#2019-1-19" class="headerlink" title="2019/1/19"></a>2019/1/19</h4><ul>
+<li><p>abs(number):number 绝对值</p>
+</li>
+<li><p>str_pad(input,pad_length,pad_string,pad_type):string 使用另一个字符串填充字符串为指定长度</p>
+<pre><code>1.input 输入的字符串
+2.pad_length 如果这个的值是负数,小于或者等于输入字符串的长度,不会发生任何填充,并会返回input
+3.pad_string 填充的字符串
+4.pad_type 可选
+5.return 填充的字符串
+</code></pre></li>
+<li><p>str_repeat(input,multiplier) 重复一个字符串</p>
+<pre><code>1.input 待操作的字符串
+2.multiplier 被重复的次数
+3.return 重复后的字符串
+</code></pre></li>
+<li><p>str_split(string,split_length):array 将一个字符串转换为数组</p>
+<pre><code>1.string 输入字符串  
+2.split_length 每一段的长度
+3.return 如果指定了split_length的参数,返回数组每个元素均为一个长度为split_length的字符块,否则每一个字符块为单个字符.如果split_length小于1,返回false,如果超过,整个字符串作为数组仅有一个的元素返回
+</code></pre></li>
+<li><p>strrev(string):string 反转字符串  </p>
+</li>
+</ul>
+<h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><ul>
 <li><p>is_numeric(var):bool 检测变量是否为数字或者数字字符串</p>
 </li>
 <li><p>array_column(array,column_key,index_key):array 返回数组中指定的一列</p>
@@ -563,7 +692,7 @@ ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">1.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">2.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">3.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">4.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-23"><span class="nav-number">1.</span> <span class="nav-text">2019/1/23</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-22"><span class="nav-number">2.</span> <span class="nav-text">2019/1/22</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-21"><span class="nav-number">3.</span> <span class="nav-text">2019/1/21</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-20"><span class="nav-number">4.</span> <span class="nav-text">2019/1/20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-19"><span class="nav-number">5.</span> <span class="nav-text">2019/1/19</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">6.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">7.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">8.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">9.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
             
 
           </div>
