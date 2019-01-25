@@ -324,7 +324,42 @@
       
         
           
-            <h4 id="2019-1-23"><a href="#2019-1-23" class="headerlink" title="2019/1/23"></a>2019/1/23</h4><ul>
+            <h4 id="2019-1-25"><a href="#2019-1-25" class="headerlink" title="2019/1/25"></a>2019/1/25</h4><ul>
+<li><p>reset(array):mixed 将数组的内部指针指向第一个单元</p>
+</li>
+<li><p>list(var,…var):array  把数组中的值赋给一组变量</p>
+</li>
+<li><p>each(array):array 返回数组中当前的key/value 并将数组指针向前移动一步</p>
+</li>
+<li><p>end(array):mixed 将数组的内部指针指向最后一个单元</p>
+</li>
+<li><p>extract(array,flags,prefix):int 从数组中将变量导入到当前的符号表</p>
+</li>
+</ul>
+<h4 id="2019-1-24"><a href="#2019-1-24" class="headerlink" title="2019/1/24"></a>2019/1/24</h4><ul>
+<li><p>array_walk_recursive(array,callback,userdata):bool  对数组中的每个成员递归的应用用户函数</p>
+<pre><code>1.array 输入的数组
+2.callback 回调函数
+3.userdata 提供可选参数
+4.return 成功true 失败false
+</code></pre></li>
+<li><p>arsort(array,sort_flags):bool 对数组进行逆向排序并保持索引关系</p>
+</li>
+<li><p>asort(array,sort_flags):bool 对数组进行排序并保持索引关系</p>
+<pre><code>1.array 输入的数组
+2.sort_flags 可以用可选的参数sort_flags改变排序行为
+3.return 成功true,失败返回false
+</code></pre></li>
+<li><p>compact(varname):array 建立一个数组,包含变量名和他们的值</p>
+<pre><code>1.varname 接受可变的参数数目,可以是字符串,也可以是数组
+2.return 返回输出的数组
+</code></pre></li>
+<li><p>current(array):mixed 返回数组中的当前单元</p>
+<pre><code>1.array 这个数组
+2.return 当前被内部指针指向的数组,并不移动指针,如果内部指针超出了单元列表的末端
+</code></pre></li>
+</ul>
+<h4 id="2019-1-23"><a href="#2019-1-23" class="headerlink" title="2019/1/23"></a>2019/1/23</h4><ul>
 <li><p>array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值</p>
 <pre><code>1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型
 2.values 将作为array的值
