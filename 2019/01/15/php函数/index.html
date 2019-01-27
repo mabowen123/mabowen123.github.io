@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="2019/1/25 reset(array):mixed 将数组的内部指针指向第一个单元  list(var,…var):array  把数组中的值赋给一组变量  each(array):array 返回数组中当前的key/value 并将数组指针向前移动一步  end(array):mixed 将数组的内部指针指向最后一个单元  extract(array,flags,prefix):int 从">
+<meta name="description" content="2019/1/27 sprintf(format):string 返回格式化的字符串  ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符) 1.str 输入的字符串 2.character_mask 指定想要删除的字符 3.return str最左边的空白字符串  strtolower(string):string 将字符串转化为小写  str">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP函数">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/php函数/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="2019/1/25 reset(array):mixed 将数组的内部指针指向第一个单元  list(var,…var):array  把数组中的值赋给一组变量  each(array):array 返回数组中当前的key/value 并将数组指针向前移动一步  end(array):mixed 将数组的内部指针指向最后一个单元  extract(array,flags,prefix):int 从">
+<meta property="og:description" content="2019/1/27 sprintf(format):string 返回格式化的字符串  ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符) 1.str 输入的字符串 2.character_mask 指定想要删除的字符 3.return str最左边的空白字符串  strtolower(string):string 将字符串转化为小写  str">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-25T02:39:20.230Z">
+<meta property="og:updated_time" content="2019-01-27T07:19:15.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP函数">
-<meta name="twitter:description" content="2019/1/25 reset(array):mixed 将数组的内部指针指向第一个单元  list(var,…var):array  把数组中的值赋给一组变量  each(array):array 返回数组中当前的key/value 并将数组指针向前移动一步  end(array):mixed 将数组的内部指针指向最后一个单元  extract(array,flags,prefix):int 从">
+<meta name="twitter:description" content="2019/1/27 sprintf(format):string 返回格式化的字符串  ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符) 1.str 输入的字符串 2.character_mask 指定想要删除的字符 3.return str最左边的空白字符串  strtolower(string):string 将字符串转化为小写  str">
 
 
 
@@ -320,7 +320,36 @@
       
 
       
-        <h4 id="2019-1-25"><a href="#2019-1-25" class="headerlink" title="2019/1/25"></a>2019/1/25</h4><ul>
+        <h4 id="2019-1-27"><a href="#2019-1-27" class="headerlink" title="2019/1/27"></a>2019/1/27</h4><ul>
+<li><p>sprintf(format):string 返回格式化的字符串</p>
+</li>
+<li><p>ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符)</p>
+<pre><code>1.str 输入的字符串
+2.character_mask 指定想要删除的字符
+3.return str最左边的空白字符串
+</code></pre></li>
+<li><p>strtolower(string):string 将字符串转化为小写</p>
+</li>
+<li><p>strtoupper(string):string 将字符串转化为大写</p>
+</li>
+<li><p>strtok(string):string 标记分割字符串</p>
+<h4 id="2019-1-26"><a href="#2019-1-26" class="headerlink" title="2019/1/26"></a>2019/1/26</h4></li>
+<li><p>array_key_exists(key,array):bool 检查数组里是否有指定的键名或索引</p>
+<pre><code>1.key 要检查的键
+2.array 一个数组,包含待检查的键
+3.return 成功true,失败false
+</code></pre></li>
+<li><p>key(array):mixed 从关联数组取得键名</p>
+</li>
+<li><p>sort(array,sort_flags):bool 对数组排序</p>
+<pre><code>1.sort_flags 排序的行为
+</code></pre></li>
+<li><p>natcasesort(array):bool 用自然算法对数组不区分大小写字母排序</p>
+</li>
+<li><p>usort(array,value_compare_func):bool 使用用户自定义的比较函数对数组中的值进行排序</p>
+</li>
+</ul>
+<h4 id="2019-1-25"><a href="#2019-1-25" class="headerlink" title="2019/1/25"></a>2019/1/25</h4><ul>
 <li><p>reset(array):mixed 将数组的内部指针指向第一个单元</p>
 </li>
 <li><p>list(var,…var):array  把数组中的值赋给一组变量</p>
@@ -727,7 +756,7 @@ ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-25"><span class="nav-number">1.</span> <span class="nav-text">2019/1/25</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-24"><span class="nav-number">2.</span> <span class="nav-text">2019/1/24</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-23"><span class="nav-number">3.</span> <span class="nav-text">2019/1/23</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-22"><span class="nav-number">4.</span> <span class="nav-text">2019/1/22</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-21"><span class="nav-number">5.</span> <span class="nav-text">2019/1/21</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-20"><span class="nav-number">6.</span> <span class="nav-text">2019/1/20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-19"><span class="nav-number">7.</span> <span class="nav-text">2019/1/19</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">8.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">9.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">10.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">11.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-27"><span class="nav-number">1.</span> <span class="nav-text">2019/1/27</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-26"><span class="nav-number">2.</span> <span class="nav-text">2019/1/26</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-25"><span class="nav-number">3.</span> <span class="nav-text">2019/1/25</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-24"><span class="nav-number">4.</span> <span class="nav-text">2019/1/24</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-23"><span class="nav-number">5.</span> <span class="nav-text">2019/1/23</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-22"><span class="nav-number">6.</span> <span class="nav-text">2019/1/22</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-21"><span class="nav-number">7.</span> <span class="nav-text">2019/1/21</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-20"><span class="nav-number">8.</span> <span class="nav-text">2019/1/20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-19"><span class="nav-number">9.</span> <span class="nav-text">2019/1/19</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">10.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">11.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">12.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">13.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
             
 
           </div>
