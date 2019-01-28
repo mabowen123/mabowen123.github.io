@@ -324,7 +324,25 @@
       
         
           
-            <h4 id="2019-1-27"><a href="#2019-1-27" class="headerlink" title="2019/1/27"></a>2019/1/27</h4><ul>
+            <h4 id="2019-1-28"><a href="#2019-1-28" class="headerlink" title="2019/1/28"></a>2019/1/28</h4><ul>
+<li><p>sscanf(str,format,mixed):mixed 根据指定格式解析输入得字符</p>
+</li>
+<li><p>strlen(str):int 获取字符串长度</p>
+</li>
+<li><p>strpbrk(haystack,char_list):string</p>
+<pre><code>1.haystack 在此字符串中查找char_list
+2.char_list 参数分大小写
+3.return 返回一个以找到得字符开始得子字符串,如果没有找到返回false
+</code></pre></li>
+<li><p>preg_match(pattern,subject,matches,flags,offset):int 执行匹配正则表达式</p>
+</li>
+<li><p>wordwrap(str,width,break,cut):string 打断字符串为指定数量得字串</p>
+<pre><code>1.str 输入字符串
+2.width 列宽度
+3.break 使用可选得break参数打断字符串        
+4.如果cut为true,字符串总是在指定得width或者之前位置被打断,因此,如果有得单词宽度超过了给定得宽度,他会被分割开来
+5.return 打断后得字符串
+</code></pre><h4 id="2019-1-27"><a href="#2019-1-27" class="headerlink" title="2019/1/27"></a>2019/1/27</h4></li>
 <li><p>sprintf(format):string 返回格式化的字符串</p>
 </li>
 <li><p>ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符)</p>
