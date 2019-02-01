@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="2019/1/29 call_user_func_array(callback,parm_arr):mixed 调用回调函数,并把一个数组参数作为回调函数得参数 1.callback 被调用得回调函数     2.param_arr 要被传入回调函数得数组,这个数组是索引数组 3.return 回调函数得结果,如果出错就是false  call_user_func(callback,paramet">
+<meta name="description" content="2019/2/1 max (values):mixed 找出最大值  min(values):mixed 找出最小值  mt_rand(void):int 返回min 到 max 之间的随机整数  mt_getrandmax(void):int 显示随机数的最大可能值  round(val,precision):float 1.val 要处理的值 2.precision 可选的十进制小数点后数字的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP函数">
 <meta property="og:url" content="http://yoursite.com/2019/01/15/php函数/index.html">
 <meta property="og:site_name" content="孖">
-<meta property="og:description" content="2019/1/29 call_user_func_array(callback,parm_arr):mixed 调用回调函数,并把一个数组参数作为回调函数得参数 1.callback 被调用得回调函数     2.param_arr 要被传入回调函数得数组,这个数组是索引数组 3.return 回调函数得结果,如果出错就是false  call_user_func(callback,paramet">
+<meta property="og:description" content="2019/2/1 max (values):mixed 找出最大值  min(values):mixed 找出最小值  mt_rand(void):int 返回min 到 max 之间的随机整数  mt_getrandmax(void):int 显示随机数的最大可能值  round(val,precision):float 1.val 要处理的值 2.precision 可选的十进制小数点后数字的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-29T12:09:46.124Z">
+<meta property="og:updated_time" content="2019-02-01T06:00:06.148Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP函数">
-<meta name="twitter:description" content="2019/1/29 call_user_func_array(callback,parm_arr):mixed 调用回调函数,并把一个数组参数作为回调函数得参数 1.callback 被调用得回调函数     2.param_arr 要被传入回调函数得数组,这个数组是索引数组 3.return 回调函数得结果,如果出错就是false  call_user_func(callback,paramet">
+<meta name="twitter:description" content="2019/2/1 max (values):mixed 找出最大值  min(values):mixed 找出最小值  mt_rand(void):int 返回min 到 max 之间的随机整数  mt_getrandmax(void):int 显示随机数的最大可能值  round(val,precision):float 1.val 要处理的值 2.precision 可选的十进制小数点后数字的">
 
 
 
@@ -320,7 +320,46 @@
       
 
       
-        <h4 id="2019-1-29"><a href="#2019-1-29" class="headerlink" title="2019/1/29"></a>2019/1/29</h4><ul>
+        <h4 id="2019-2-1"><a href="#2019-2-1" class="headerlink" title="2019/2/1"></a>2019/2/1</h4><ul>
+<li><p>max (values):mixed 找出最大值</p>
+</li>
+<li><p>min(values):mixed 找出最小值</p>
+</li>
+<li><p>mt_rand(void):int 返回min 到 max 之间的随机整数</p>
+</li>
+<li><p>mt_getrandmax(void):int 显示随机数的最大可能值</p>
+</li>
+<li><p>round(val,precision):float</p>
+<pre><code>1.val 要处理的值
+2.precision 可选的十进制小数点后数字的数目
+3.return 四舍五入的值1
+</code></pre><h4 id="2019-1-31"><a href="#2019-1-31" class="headerlink" title="2019/1/31"></a>2019/1/31</h4></li>
+<li><p>ceil(value):float 进一法取整,返回不小于 value 的下一个整数，value 如果有小数部分则进一位</p>
+</li>
+<li><p>exp(arg):float 计算e的指数</p>
+</li>
+<li><p>floor(value):float 舍去法取证 返回不大于value的最接近的整数,舍去小数部分取整</p>
+</li>
+<li><p>fmod(float,float):float 返回除法的浮点数余数</p>
+</li>
+<li><p>getrandmax(void):int显示随机数最大的可能值</p>
+</li>
+</ul>
+<h4 id="2019-1-30"><a href="#2019-1-30" class="headerlink" title="2019/1/30"></a>2019/1/30</h4><ul>
+<li><p>func_num_args(void):int 返回传递给函数得参数个数</p>
+</li>
+<li><p>func_get_arg(arg_num):mixed 用户从自定义函数得参数列表中获取某个指定得参数</p>
+</li>
+<li><p>func_get_args(void):array 返回一个包含函数参数列表的数组</p>
+</li>
+<li><p>function_exists(function_name):bool 如果给定的函数已经被定义就返回true</p>
+</li>
+<li><p>get_defined_functions( exclude_disabled):array 返回所有已定义函数的数组</p>
+<pre><code>1.exclude_disabled 禁止的函数是否应该在返回的数据里排除
+2.return 数组,包含所有已定义的函数
+</code></pre></li>
+</ul>
+<h4 id="2019-1-29"><a href="#2019-1-29" class="headerlink" title="2019/1/29"></a>2019/1/29</h4><ul>
 <li><p>call_user_func_array(callback,parm_arr):mixed 调用回调函数,并把一个数组参数作为回调函数得参数</p>
 <pre><code>1.callback 被调用得回调函数    
 2.param_arr 要被传入回调函数得数组,这个数组是索引数组
@@ -793,7 +832,7 @@ ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-29"><span class="nav-number">1.</span> <span class="nav-text">2019/1/29</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-28"><span class="nav-number">2.</span> <span class="nav-text">2019/1/28</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-27"><span class="nav-number">3.</span> <span class="nav-text">2019/1/27</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-26"><span class="nav-number">4.</span> <span class="nav-text">2019/1/26</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-25"><span class="nav-number">5.</span> <span class="nav-text">2019/1/25</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-24"><span class="nav-number">6.</span> <span class="nav-text">2019/1/24</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-23"><span class="nav-number">7.</span> <span class="nav-text">2019/1/23</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-22"><span class="nav-number">8.</span> <span class="nav-text">2019/1/22</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-21"><span class="nav-number">9.</span> <span class="nav-text">2019/1/21</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-20"><span class="nav-number">10.</span> <span class="nav-text">2019/1/20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-19"><span class="nav-number">11.</span> <span class="nav-text">2019/1/19</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">12.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">13.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">14.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">15.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-2-1"><span class="nav-number">1.</span> <span class="nav-text">2019/2/1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-31"><span class="nav-number">2.</span> <span class="nav-text">2019/1/31</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-30"><span class="nav-number">3.</span> <span class="nav-text">2019/1/30</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-29"><span class="nav-number">4.</span> <span class="nav-text">2019/1/29</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-28"><span class="nav-number">5.</span> <span class="nav-text">2019/1/28</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-27"><span class="nav-number">6.</span> <span class="nav-text">2019/1/27</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-26"><span class="nav-number">7.</span> <span class="nav-text">2019/1/26</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-25"><span class="nav-number">8.</span> <span class="nav-text">2019/1/25</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-24"><span class="nav-number">9.</span> <span class="nav-text">2019/1/24</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-23"><span class="nav-number">10.</span> <span class="nav-text">2019/1/23</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-22"><span class="nav-number">11.</span> <span class="nav-text">2019/1/22</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-21"><span class="nav-number">12.</span> <span class="nav-text">2019/1/21</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-20"><span class="nav-number">13.</span> <span class="nav-text">2019/1/20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-19"><span class="nav-number">14.</span> <span class="nav-text">2019/1/19</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-18"><span class="nav-number">15.</span> <span class="nav-text">2019/1/18</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-17"><span class="nav-number">16.</span> <span class="nav-text">2019/1/17</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-16"><span class="nav-number">17.</span> <span class="nav-text">2019/1/16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2019-1-15"><span class="nav-number">18.</span> <span class="nav-text">2019/1/15</span></a></li></ol></div>
             
 
           </div>
