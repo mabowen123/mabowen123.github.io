@@ -324,7 +324,164 @@
       
         
           
-            <h4 id="2019-2-1"><a href="#2019-2-1" class="headerlink" title="2019/2/1"></a>2019/2/1</h4><ul>
+            <h4 id="2019-2-12"><a href="#2019-2-12" class="headerlink" title="2019/2/12"></a>2019/2/12</h4><ul>
+<li><p>date(string,timestamp):string 格式化一个本地时间/日期</p>
+<pre><code>1.输出string格式 
+2.timestamp,时间戳,默认time()的返回值
+</code></pre></li>
+<li><p>strtotime(time,now):int 将任何字符串的日期时间描述解析为Unix时间戳</p>
+<pre><code>1.time 日期/时间字符串
+2.now 用来计算返回值的时间戳
+</code></pre></li>
+<li><p>getdate(timestamp):array 取得日期/时间信息</p>
+<pre><code>1.timestamp 时间戳,默认是当前本地时间
+</code></pre></li>
+<li><p>microtime(get_as_float):mixed 返回当前Unix时间戳和微秒数</p>
+<pre><code>1.get_as_float为true,microtime将返回一个浮点数
+</code></pre></li>
+<li><p>mktime():int 取得一个日期的Unix时间戳</p>
+</li>
+</ul>
+<h4 id="2019-2-11"><a href="#2019-2-11" class="headerlink" title="2019/2/11"></a>2019/2/11</h4><ul>
+<li><p>date_create() 返回一个新的DateTime对象</p>
+</li>
+<li><p>checkdate(month,day,year):bool 验证一个格里高里日期</p>
+<pre><code>1.month的值是从1到12
+2.day 在给定的month所应该具有的天数范围之内
+3.year 从1到32767
+</code></pre></li>
+<li><p>date_format():string 函返回一个根据指定格式进行格式化的日期</p>
+</li>
+<li><p>date_add(datetime,interval):DateTime 给一个DateTime对象增加一定量的天,月,年,小时,分钟以及秒</p>
+</li>
+<li><p>date_interval_create_from_date_string(time):DateInterval 从字符串的相关部分建立一个DateInterval</p>
+</li>
+</ul>
+<h4 id="2019-2-10"><a href="#2019-2-10" class="headerlink" title="2019/2/10"></a>2019/2/10</h4><ul>
+<li><p>__autoload(class):void 尝试加载未定义的类</p>
+</li>
+<li><p>spl_autoload_register(autoload_function,throw=true,prepend=false):bool 注册给定的函数作为__autoload的实现</p>
+<pre><code>1.autoload_function 欲注册的自动装载函数
+2.throw 此参数设置了autoload_function 无法成功注册 抛出异常
+3.prepend 如果是true
+</code></pre></li>
+<li><p>class_alias(original,alias,autoload):bool 为一个类创建别名</p>
+<pre><code>1.original 原有的类
+2.alias 类的别名
+3.autoload 如果原始类没有加载,是否使用自动加载
+</code></pre></li>
+<li><p>class_exists(class_name,autoload):bool 检查类是否已定义</p>
+<pre><code>1.class_name 类名
+2.是否默认调用 __autoload
+</code></pre></li>
+<li><p>get_called_class(void):string 获取静态方法调用的类名</p>
+</li>
+</ul>
+<h4 id="2019-2-9"><a href="#2019-2-9" class="headerlink" title="2019/2/9"></a>2019/2/9</h4><ul>
+<li><p>get_class_methods(class_name):array 返回由类的方法名组成的数组</p>
+</li>
+<li><p>get_class(object=null):string 返回对象的类名</p>
+<pre><code>1.object 要测试的对象,如果在类里,此参数可以省略
+</code></pre></li>
+<li><p>get_class_vars(class_name):array 返回由类得默认属性组成得数组</p>
+</li>
+<li><p>get_parent_class(obj):string 返回对象或类得父类名</p>
+</li>
+<li><p>interface_exists(interface_name.autoload=true):bool 检查接口是否已被定义</p>
+</li>
+</ul>
+<h4 id="2019-2-8"><a href="#2019-2-8" class="headerlink" title="2019/2/8"></a>2019/2/8</h4><ul>
+<li><p>trait_exists(traitname,autoload):bool 检查指定得trait是否存在</p>
+<pre><code>1.traitname 待检查得trait得名称
+2.autoload 如果尚未加载,是否使用自动加载
+</code></pre></li>
+<li><p>property_exists(class,property):bool 检查对象或类是否具有该属性</p>
+<pre><code>1.class 字符串形式得类明或要检查得类得一个对象
+2.property 属性的名字
+</code></pre></li>
+<li><p>method_exists(object,method_name):bool 检查类的方法是否存在</p>
+</li>
+<li><p>is_subclass_of(object,class_name):bool 如果此对象是该类的子类,则返回true</p>
+</li>
+<li><p>is_a(object,class_name,allow_string=FALSE):bool 如果对象属于该类或该类是此对象的父类则返回true</p>
+</li>
+</ul>
+<h4 id="2019-2-7"><a href="#2019-2-7" class="headerlink" title="2019/2/7"></a>2019/2/7</h4><ul>
+<li><p>ctype_graph(text):bool 做可打印字符串检测,空格除外,如果text每个字符都是输出可见的,就返回true</p>
+</li>
+<li><p>ctype_digit(text):bool 做纯数字检测</p>
+</li>
+<li><p>ctype_cntrl(text):bool 做控制字符检测</p>
+</li>
+<li><p>ctype_alpha(text):bool 做纯字符检测</p>
+</li>
+<li><p>ctype_alnum(text):bool 做字母和数字字符检测</p>
+</li>
+</ul>
+<h4 id="2019-2-6"><a href="#2019-2-6" class="headerlink" title="2019/2/6"></a>2019/2/6</h4><ul>
+<li><p>ctype_upper(text):bool 检测text里面的字符是不是都是大写字母</p>
+</li>
+<li><p>ctype_space(text):bool 检测text里面的字符是否包含空白</p>
+</li>
+<li><p>ctype_punct(text):bool 检测text可打印的字符是不是都是标点符号</p>
+</li>
+<li><p>ctype_print(text):bool 检测text里面的字符是不是都是可以打印出来</p>
+</li>
+<li><p>ctype_lower(text):bool 检测text里面是不是都是小写字母</p>
+</li>
+</ul>
+<h4 id="2019-2-5"><a href="#2019-2-5" class="headerlink" title="2019/2/5"></a>2019/2/5</h4><ul>
+<li><p>settype(vat,typr):bool 设置变量的类型</p>
+</li>
+<li><p>strval(var):string 获取变量的字符串值</p>
+</li>
+<li><p>intval(var,base=10):int 获取变量的整数值</p>
+<pre><code>1.要转换成integer的数量值
+2.base转化所用的进制
+</code></pre></li>
+<li><p>floatval(var):float 获取变量的浮点值</p>
+</li>
+<li><p>boolval(var):boolean 获取变量的布尔值</p>
+</li>
+</ul>
+<h4 id="2019-2-4"><a href="#2019-2-4" class="headerlink" title="2019/2/4"></a>2019/2/4</h4><ul>
+<li><p>is_countable(var):bool 验证变量是否为可数值</p>
+</li>
+<li><p>is_callable(name,syntax_only=false,callable_name):bool</p>
+<pre><code>1.name 要检查的回调函数
+2.syntax_only 如果参数是否为合法的可调用结构
+3.callable_name 接受可调用的名称
+</code></pre></li>
+<li><p>is_bool(var):bool 检查变量是否为布尔值</p>
+</li>
+<li><p>is_array(var):bool 检查变量是否为数组</p>
+</li>
+<li><p>get_resource_type(handle):string 返回资源类型</p>
+</li>
+</ul>
+<h4 id="2019-2-3"><a href="#2019-2-3" class="headerlink" title="2019/2/3"></a>2019/2/3</h4><ul>
+<li><p>is_object(var):bool 检测变量是否是一个对象</p>
+</li>
+<li><p>is_numeric(var):bool 检测变量是否为数字或数字字符串</p>
+</li>
+<li><p>is_null(var):bool 检测变量是否为null</p>
+</li>
+<li><p>is_int/is_integer/is_long(var):bool 检测变量是否为整数</p>
+</li>
+<li><p>is_float/is_double(var):bool 检测变量是否是浮点型</p>
+</li>
+</ul>
+<h4 id="2019-2-2"><a href="#2019-2-2" class="headerlink" title="2019/2/2"></a>2019/2/2</h4><ul>
+<li><p>unset(var):void 销毁指定的变量</p>
+</li>
+<li><p>unserialize(str):mixed 从已存储的表示中创建php的值</p>
+</li>
+<li><p>serialize(value):String 返回字符串,此字符串包含表示value的字节流,产生一个可存储的值的表示</p>
+</li>
+<li><p>isset(var):bool 检测变量是否已设置并且非null</p>
+</li>
+<li><p>is_string(var):bool 检测变量是否是字符串</p>
+<h4 id="2019-2-1"><a href="#2019-2-1" class="headerlink" title="2019/2/1"></a>2019/2/1</h4></li>
 <li><p>max (values):mixed 找出最大值</p>
 </li>
 <li><p>min(values):mixed 找出最小值</p>
