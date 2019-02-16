@@ -324,7 +324,36 @@
       
         
           
-            <h4 id="2019-2-12"><a href="#2019-2-12" class="headerlink" title="2019/2/12"></a>2019/2/12</h4><ul>
+            <h4 id="2019-2-16"><a href="#2019-2-16" class="headerlink" title="2019/2/16"></a>2019/2/16</h4><p>回顾 2019/1/16</p>
+<h4 id="2019-2-15"><a href="#2019-2-15" class="headerlink" title="2019/2/15"></a>2019/2/15</h4><p>回顾 2019/1/15</p>
+<h4 id="2019-2-14"><a href="#2019-2-14" class="headerlink" title="2019/2/14"></a>2019/2/14</h4><ul>
+<li><p>chdir(directory):bool 改变目录</p>
+</li>
+<li><p>chroot(directory):bool 改变根目录</p>
+</li>
+<li><p>closedir(dir_handle):void 关闭目录句柄</p>
+</li>
+<li><p>dir(directory,context):Directory 返回一个directory类实例</p>
+</li>
+<li><p>getcwd(void):string 取得当前工作目录</p>
+</li>
+</ul>
+<h4 id="2019-2-13"><a href="#2019-2-13" class="headerlink" title="2019/2/13"></a>2019/2/13</h4><ul>
+<li><p>gmmktime(hour,minute,second,month,day,year,is_dst):int 取得GMT日期的UNIX的时间戳</p>
+</li>
+<li><p>gettimeofday(return_float=false):mixed 取得当前的时间</p>
+<pre><code>1.return_float 为true,会返回一个浮点数而不是一个数组
+</code></pre></li>
+<li><p>gmdate(format,timestamp):string 格式化一个GMT/UTC 日期/时间</p>
+</li>
+<li><p>time():int 返回当前unix时间戳</p>
+</li>
+<li><p>localtime(timestamp=time(),is_associative=false):array 取得本地时间</p>
+<pre><code>1.timestamp Unix时间戳
+2.is_associative 如果设为false或未提供则返回的是普通的数字索引数组,如果为true,是返回定义的键名数组
+</code></pre></li>
+</ul>
+<h4 id="2019-2-12"><a href="#2019-2-12" class="headerlink" title="2019/2/12"></a>2019/2/12</h4><ul>
 <li><p>date(string,timestamp):string 格式化一个本地时间/日期</p>
 <pre><code>1.输出string格式 
 2.timestamp,时间戳,默认time()的返回值
