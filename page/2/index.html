@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/27/sql/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/15/php函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="孖">
@@ -251,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/27/sql/" itemprop="url">Mysql学习</a></h1>
+                <a class="post-title-link" href="/2019/01/15/php函数/" itemprop="url">PHP函数</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +263,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-27T14:04:39+08:00">
-                2018-12-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T16:20:08+08:00">
+                2019-01-15
               </time>
             
 
@@ -282,8 +282,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/27/sql/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/27/sql/" itemprop="commentCount"></span>
+                <a href="/2019/01/15/php函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/15/php函数/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -291,7 +291,7 @@
 
           
           
-             <span id="/2018/12/27/sql/" class="leancloud_visitors" data-flag-title="Mysql学习">
+             <span id="/2019/01/15/php函数/" class="leancloud_visitors" data-flag-title="PHP函数">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,26 +324,565 @@
       
         
           
-            <h5 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use (数据库名)</span><br></pre></td></tr></table></figure>
-<h5 id="显示所有数据库"><a href="#显示所有数据库" class="headerlink" title="显示所有数据库"></a>显示所有数据库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show DATABASES</span><br></pre></td></tr></table></figure>
-<h5 id="显示所有表"><a href="#显示所有表" class="headerlink" title="显示所有表"></a>显示所有表</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show TABLES</span><br></pre></td></tr></table></figure>
-<h5 id="返回表的所有字段"><a href="#返回表的所有字段" class="headerlink" title="返回表的所有字段"></a>返回表的所有字段</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show COLUMNS FROM (表名)</span><br></pre></td></tr></table></figure>
-<h5 id="检索单个列"><a href="#检索单个列" class="headerlink" title="检索单个列"></a>检索单个列</h5><p>dwy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select (表内字段) from (表名)</span><br></pre></td></tr></table></figure></p>
-<h5 id="检索不同的行"><a href="#检索不同的行" class="headerlink" title="检索不同的行"></a>检索不同的行</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select distinct (表内字段) from (表名)</span><br></pre></td></tr></table></figure>
-<h5 id="限制结果"><a href="#限制结果" class="headerlink" title="限制结果"></a>限制结果</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select (表内字段) from (表名) limit (条数)</span><br></pre></td></tr></table></figure>
-<h5 id="子句"><a href="#子句" class="headerlink" title="子句"></a>子句</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">排序子句</span><br><span class="line">select (表内字段) from (表名) order by (字段1) (字段2)...</span><br></pre></td></tr></table></figure>
-<p>在字段1相同时才会对字段2排序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">where 子句 between</span><br><span class="line">select (表内字段) from (表名)  where (表内字段) between a and b</span><br><span class="line"></span><br><span class="line">where is null 检测是否空</span><br><span class="line">select (表内字段) from (表名) where (表内字段) is null </span><br><span class="line"></span><br><span class="line">where not 取反</span><br><span class="line">select (表内字段) from (表名) where(表内字段) not in (a,b)</span><br></pre></td></tr></table></figure>
-<p>like</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">% 通配符 匹配多个字符</span><br><span class="line">_ 通配符 匹配单个字符</span><br></pre></td></tr></table></figure>
-<p>Concat 拼接字段</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT CONCAT(ym_commodity.vip_price ,&apos;/&apos;,ym_commodity.sale_price) as price</span><br><span class="line">FROM</span><br><span class="line">ym_commodity</span><br><span class="line">where id =1;</span><br></pre></td></tr></table></figure>
-<p>select 子查询</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">子查询太消耗性能</span><br></pre></td></tr></table></figure>
-<h4 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h4><h4 id="更新数据"><a href="#更新数据" class="headerlink" title="更新数据"></a>更新数据</h4><p>update (表名) set (字段=’’)<br>注意要跟where 条件 避免更新全表</p>
-<h4 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h4><p>delete from (表名) 注意跟where条件 避免更新全表</p>
-<p>truncate (表名) 删除表内所有行</p>
-<h4 id="使用视图"><a href="#使用视图" class="headerlink" title="使用视图"></a>使用视图</h4>
+            <h4 id="2019-2-25"><a href="#2019-2-25" class="headerlink" title="2019/2/25"></a>2019/2/25</h4><p>回顾 2019/1/25</p>
+<h4 id="2019-2-24"><a href="#2019-2-24" class="headerlink" title="2019/2/24"></a>2019/2/24</h4><p>回顾 2019/1/24</p>
+<h4 id="2019-2-23"><a href="#2019-2-23" class="headerlink" title="2019/2/23"></a>2019/2/23</h4><p>回顾 2019/1/23</p>
+<h4 id="2019-2-22"><a href="#2019-2-22" class="headerlink" title="2019/2/22"></a>2019/2/22</h4><p>回顾 2019/1/22</p>
+<h4 id="2019-2-21"><a href="#2019-2-21" class="headerlink" title="2019/2/21"></a>2019/2/21</h4><p>回顾 2019/1/21</p>
+<h4 id="2019-2-20"><a href="#2019-2-20" class="headerlink" title="2019/2/20"></a>2019/2/20</h4><p>回顾 2019/1/20</p>
+<h4 id="2019-2-19"><a href="#2019-2-19" class="headerlink" title="2019/2/19"></a>2019/2/19</h4><p>回顾 2019/1/19</p>
+<h4 id="2019-2-18"><a href="#2019-2-18" class="headerlink" title="2019/2/18"></a>2019/2/18</h4><p>回顾 2019/1/18</p>
+<h4 id="2019-2-17"><a href="#2019-2-17" class="headerlink" title="2019/2/17"></a>2019/2/17</h4><p>回顾 2019/1/17</p>
+<h4 id="2019-2-16"><a href="#2019-2-16" class="headerlink" title="2019/2/16"></a>2019/2/16</h4><p>回顾 2019/1/16</p>
+<h4 id="2019-2-15"><a href="#2019-2-15" class="headerlink" title="2019/2/15"></a>2019/2/15</h4><p>回顾 2019/1/15</p>
+<h4 id="2019-2-14"><a href="#2019-2-14" class="headerlink" title="2019/2/14"></a>2019/2/14</h4><ul>
+<li><p>chdir(directory):bool 改变目录</p>
+</li>
+<li><p>chroot(directory):bool 改变根目录</p>
+</li>
+<li><p>closedir(dir_handle):void 关闭目录句柄</p>
+</li>
+<li><p>dir(directory,context):Directory 返回一个directory类实例</p>
+</li>
+<li><p>getcwd(void):string 取得当前工作目录</p>
+</li>
+</ul>
+<h4 id="2019-2-13"><a href="#2019-2-13" class="headerlink" title="2019/2/13"></a>2019/2/13</h4><ul>
+<li><p>gmmktime(hour,minute,second,month,day,year,is_dst):int 取得GMT日期的UNIX的时间戳</p>
+</li>
+<li><p>gettimeofday(return_float=false):mixed 取得当前的时间</p>
+<pre><code>1.return_float 为true,会返回一个浮点数而不是一个数组
+</code></pre></li>
+<li><p>gmdate(format,timestamp):string 格式化一个GMT/UTC 日期/时间</p>
+</li>
+<li><p>time():int 返回当前unix时间戳</p>
+</li>
+<li><p>localtime(timestamp=time(),is_associative=false):array 取得本地时间</p>
+<pre><code>1.timestamp Unix时间戳
+2.is_associative 如果设为false或未提供则返回的是普通的数字索引数组,如果为true,是返回定义的键名数组
+</code></pre></li>
+</ul>
+<h4 id="2019-2-12"><a href="#2019-2-12" class="headerlink" title="2019/2/12"></a>2019/2/12</h4><ul>
+<li><p>date(string,timestamp):string 格式化一个本地时间/日期</p>
+<pre><code>1.输出string格式 
+2.timestamp,时间戳,默认time()的返回值
+</code></pre></li>
+<li><p>strtotime(time,now):int 将任何字符串的日期时间描述解析为Unix时间戳</p>
+<pre><code>1.time 日期/时间字符串
+2.now 用来计算返回值的时间戳
+</code></pre></li>
+<li><p>getdate(timestamp):array 取得日期/时间信息</p>
+<pre><code>1.timestamp 时间戳,默认是当前本地时间
+</code></pre></li>
+<li><p>microtime(get_as_float):mixed 返回当前Unix时间戳和微秒数</p>
+<pre><code>1.get_as_float为true,microtime将返回一个浮点数
+</code></pre></li>
+<li><p>mktime():int 取得一个日期的Unix时间戳</p>
+</li>
+</ul>
+<h4 id="2019-2-11"><a href="#2019-2-11" class="headerlink" title="2019/2/11"></a>2019/2/11</h4><ul>
+<li><p>date_create() 返回一个新的DateTime对象</p>
+</li>
+<li><p>checkdate(month,day,year):bool 验证一个格里高里日期</p>
+<pre><code>1.month的值是从1到12
+2.day 在给定的month所应该具有的天数范围之内
+3.year 从1到32767
+</code></pre></li>
+<li><p>date_format():string 函返回一个根据指定格式进行格式化的日期</p>
+</li>
+<li><p>date_add(datetime,interval):DateTime 给一个DateTime对象增加一定量的天,月,年,小时,分钟以及秒</p>
+</li>
+<li><p>date_interval_create_from_date_string(time):DateInterval 从字符串的相关部分建立一个DateInterval</p>
+</li>
+</ul>
+<h4 id="2019-2-10"><a href="#2019-2-10" class="headerlink" title="2019/2/10"></a>2019/2/10</h4><ul>
+<li><p>__autoload(class):void 尝试加载未定义的类</p>
+</li>
+<li><p>spl_autoload_register(autoload_function,throw=true,prepend=false):bool 注册给定的函数作为__autoload的实现</p>
+<pre><code>1.autoload_function 欲注册的自动装载函数
+2.throw 此参数设置了autoload_function 无法成功注册 抛出异常
+3.prepend 如果是true
+</code></pre></li>
+<li><p>class_alias(original,alias,autoload):bool 为一个类创建别名</p>
+<pre><code>1.original 原有的类
+2.alias 类的别名
+3.autoload 如果原始类没有加载,是否使用自动加载
+</code></pre></li>
+<li><p>class_exists(class_name,autoload):bool 检查类是否已定义</p>
+<pre><code>1.class_name 类名
+2.是否默认调用 __autoload
+</code></pre></li>
+<li><p>get_called_class(void):string 获取静态方法调用的类名</p>
+</li>
+</ul>
+<h4 id="2019-2-9"><a href="#2019-2-9" class="headerlink" title="2019/2/9"></a>2019/2/9</h4><ul>
+<li><p>get_class_methods(class_name):array 返回由类的方法名组成的数组</p>
+</li>
+<li><p>get_class(object=null):string 返回对象的类名</p>
+<pre><code>1.object 要测试的对象,如果在类里,此参数可以省略
+</code></pre></li>
+<li><p>get_class_vars(class_name):array 返回由类得默认属性组成得数组</p>
+</li>
+<li><p>get_parent_class(obj):string 返回对象或类得父类名</p>
+</li>
+<li><p>interface_exists(interface_name.autoload=true):bool 检查接口是否已被定义</p>
+</li>
+</ul>
+<h4 id="2019-2-8"><a href="#2019-2-8" class="headerlink" title="2019/2/8"></a>2019/2/8</h4><ul>
+<li><p>trait_exists(traitname,autoload):bool 检查指定得trait是否存在</p>
+<pre><code>1.traitname 待检查得trait得名称
+2.autoload 如果尚未加载,是否使用自动加载
+</code></pre></li>
+<li><p>property_exists(class,property):bool 检查对象或类是否具有该属性</p>
+<pre><code>1.class 字符串形式得类明或要检查得类得一个对象
+2.property 属性的名字
+</code></pre></li>
+<li><p>method_exists(object,method_name):bool 检查类的方法是否存在</p>
+</li>
+<li><p>is_subclass_of(object,class_name):bool 如果此对象是该类的子类,则返回true</p>
+</li>
+<li><p>is_a(object,class_name,allow_string=FALSE):bool 如果对象属于该类或该类是此对象的父类则返回true</p>
+</li>
+</ul>
+<h4 id="2019-2-7"><a href="#2019-2-7" class="headerlink" title="2019/2/7"></a>2019/2/7</h4><ul>
+<li><p>ctype_graph(text):bool 做可打印字符串检测,空格除外,如果text每个字符都是输出可见的,就返回true</p>
+</li>
+<li><p>ctype_digit(text):bool 做纯数字检测</p>
+</li>
+<li><p>ctype_cntrl(text):bool 做控制字符检测</p>
+</li>
+<li><p>ctype_alpha(text):bool 做纯字符检测</p>
+</li>
+<li><p>ctype_alnum(text):bool 做字母和数字字符检测</p>
+</li>
+</ul>
+<h4 id="2019-2-6"><a href="#2019-2-6" class="headerlink" title="2019/2/6"></a>2019/2/6</h4><ul>
+<li><p>ctype_upper(text):bool 检测text里面的字符是不是都是大写字母</p>
+</li>
+<li><p>ctype_space(text):bool 检测text里面的字符是否包含空白</p>
+</li>
+<li><p>ctype_punct(text):bool 检测text可打印的字符是不是都是标点符号</p>
+</li>
+<li><p>ctype_print(text):bool 检测text里面的字符是不是都是可以打印出来</p>
+</li>
+<li><p>ctype_lower(text):bool 检测text里面是不是都是小写字母</p>
+</li>
+</ul>
+<h4 id="2019-2-5"><a href="#2019-2-5" class="headerlink" title="2019/2/5"></a>2019/2/5</h4><ul>
+<li><p>settype(vat,typr):bool 设置变量的类型</p>
+</li>
+<li><p>strval(var):string 获取变量的字符串值</p>
+</li>
+<li><p>intval(var,base=10):int 获取变量的整数值</p>
+<pre><code>1.要转换成integer的数量值
+2.base转化所用的进制
+</code></pre></li>
+<li><p>floatval(var):float 获取变量的浮点值</p>
+</li>
+<li><p>boolval(var):boolean 获取变量的布尔值</p>
+</li>
+</ul>
+<h4 id="2019-2-4"><a href="#2019-2-4" class="headerlink" title="2019/2/4"></a>2019/2/4</h4><ul>
+<li><p>is_countable(var):bool 验证变量是否为可数值</p>
+</li>
+<li><p>is_callable(name,syntax_only=false,callable_name):bool</p>
+<pre><code>1.name 要检查的回调函数
+2.syntax_only 如果参数是否为合法的可调用结构
+3.callable_name 接受可调用的名称
+</code></pre></li>
+<li><p>is_bool(var):bool 检查变量是否为布尔值</p>
+</li>
+<li><p>is_array(var):bool 检查变量是否为数组</p>
+</li>
+<li><p>get_resource_type(handle):string 返回资源类型</p>
+</li>
+</ul>
+<h4 id="2019-2-3"><a href="#2019-2-3" class="headerlink" title="2019/2/3"></a>2019/2/3</h4><ul>
+<li><p>is_object(var):bool 检测变量是否是一个对象</p>
+</li>
+<li><p>is_numeric(var):bool 检测变量是否为数字或数字字符串</p>
+</li>
+<li><p>is_null(var):bool 检测变量是否为null</p>
+</li>
+<li><p>is_int/is_integer/is_long(var):bool 检测变量是否为整数</p>
+</li>
+<li><p>is_float/is_double(var):bool 检测变量是否是浮点型</p>
+</li>
+</ul>
+<h4 id="2019-2-2"><a href="#2019-2-2" class="headerlink" title="2019/2/2"></a>2019/2/2</h4><ul>
+<li><p>unset(var):void 销毁指定的变量</p>
+</li>
+<li><p>unserialize(str):mixed 从已存储的表示中创建php的值</p>
+</li>
+<li><p>serialize(value):String 返回字符串,此字符串包含表示value的字节流,产生一个可存储的值的表示</p>
+</li>
+<li><p>isset(var):bool 检测变量是否已设置并且非null</p>
+</li>
+<li><p>is_string(var):bool 检测变量是否是字符串</p>
+<h4 id="2019-2-1"><a href="#2019-2-1" class="headerlink" title="2019/2/1"></a>2019/2/1</h4></li>
+<li><p>max (values):mixed 找出最大值</p>
+</li>
+<li><p>min(values):mixed 找出最小值</p>
+</li>
+<li><p>mt_rand(void):int 返回min 到 max 之间的随机整数</p>
+</li>
+<li><p>mt_getrandmax(void):int 显示随机数的最大可能值</p>
+</li>
+<li><p>round(val,precision):float</p>
+<pre><code>1.val 要处理的值
+2.precision 可选的十进制小数点后数字的数目
+3.return 四舍五入的值1
+</code></pre><h4 id="2019-1-31"><a href="#2019-1-31" class="headerlink" title="2019/1/31"></a>2019/1/31</h4></li>
+<li><p>ceil(value):float 进一法取整,返回不小于 value 的下一个整数，value 如果有小数部分则进一位</p>
+</li>
+<li><p>exp(arg):float 计算e的指数</p>
+</li>
+<li><p>floor(value):float 舍去法取证 返回不大于value的最接近的整数,舍去小数部分取整</p>
+</li>
+<li><p>fmod(float,float):float 返回除法的浮点数余数</p>
+</li>
+<li><p>getrandmax(void):int显示随机数最大的可能值</p>
+</li>
+</ul>
+<h4 id="2019-1-30"><a href="#2019-1-30" class="headerlink" title="2019/1/30"></a>2019/1/30</h4><ul>
+<li><p>func_num_args(void):int 返回传递给函数得参数个数</p>
+</li>
+<li><p>func_get_arg(arg_num):mixed 用户从自定义函数得参数列表中获取某个指定得参数</p>
+</li>
+<li><p>func_get_args(void):array 返回一个包含函数参数列表的数组</p>
+</li>
+<li><p>function_exists(function_name):bool 如果给定的函数已经被定义就返回true</p>
+</li>
+<li><p>get_defined_functions( exclude_disabled):array 返回所有已定义函数的数组</p>
+<pre><code>1.exclude_disabled 禁止的函数是否应该在返回的数据里排除
+2.return 数组,包含所有已定义的函数
+</code></pre></li>
+</ul>
+<h4 id="2019-1-29"><a href="#2019-1-29" class="headerlink" title="2019/1/29"></a>2019/1/29</h4><ul>
+<li><p>call_user_func_array(callback,parm_arr):mixed 调用回调函数,并把一个数组参数作为回调函数得参数</p>
+<pre><code>1.callback 被调用得回调函数    
+2.param_arr 要被传入回调函数得数组,这个数组是索引数组
+3.return 回调函数得结果,如果出错就是false
+</code></pre></li>
+<li><p>call_user_func(callback,parameter,mixed):mixed</p>
+<pre><code>1.callback 将被调用得回调函数
+2.parameter 0个或以上得参数,被传入回调函数
+3.return 回调函数得返回值
+</code></pre></li>
+<li><p>create_function(args,code):string </p>
+<pre><code>1.args 方法需要得参数
+2.code 方法得代码    
+3.return 作为字符串得唯一函数名,或出错时为false
+</code></pre></li>
+<li><p>forward_static_call_array(function,parameters):mixed 调用静态方法并将参数作为数组传递</p>
+</li>
+<li><p>forward_static_call(function,paramerters):mixed 调用静态方法</p>
+<h4 id="2019-1-28"><a href="#2019-1-28" class="headerlink" title="2019/1/28"></a>2019/1/28</h4></li>
+<li><p>sscanf(str,format,mixed):mixed 根据指定格式解析输入得字符</p>
+</li>
+<li><p>strlen(str):int 获取字符串长度</p>
+</li>
+<li><p>strpbrk(haystack,char_list):string</p>
+<pre><code>1.haystack 在此字符串中查找char_list
+2.char_list 参数分大小写
+3.return 返回一个以找到得字符开始得子字符串,如果没有找到返回false
+</code></pre></li>
+<li><p>preg_match(pattern,subject,matches,flags,offset):int 执行匹配正则表达式</p>
+</li>
+<li><p>wordwrap(str,width,break,cut):string 打断字符串为指定数量得字串</p>
+<pre><code>1.str 输入字符串
+2.width 列宽度
+3.break 使用可选得break参数打断字符串        
+4.如果cut为true,字符串总是在指定得width或者之前位置被打断,因此,如果有得单词宽度超过了给定得宽度,他会被分割开来
+5.return 打断后得字符串
+</code></pre><h4 id="2019-1-27"><a href="#2019-1-27" class="headerlink" title="2019/1/27"></a>2019/1/27</h4></li>
+<li><p>sprintf(format):string 返回格式化的字符串</p>
+</li>
+<li><p>ltrim(str,character_mask):string 删除字符串开头的空白字符(或其他字符)</p>
+<pre><code>1.str 输入的字符串
+2.character_mask 指定想要删除的字符
+3.return str最左边的空白字符串
+</code></pre></li>
+<li><p>strtolower(string):string 将字符串转化为小写</p>
+</li>
+<li><p>strtoupper(string):string 将字符串转化为大写</p>
+</li>
+<li><p>strtok(string):string 标记分割字符串</p>
+<h4 id="2019-1-26"><a href="#2019-1-26" class="headerlink" title="2019/1/26"></a>2019/1/26</h4></li>
+<li><p>array_key_exists(key,array):bool 检查数组里是否有指定的键名或索引</p>
+<pre><code>1.key 要检查的键
+2.array 一个数组,包含待检查的键
+3.return 成功true,失败false
+</code></pre></li>
+<li><p>key(array):mixed 从关联数组取得键名</p>
+</li>
+<li><p>sort(array,sort_flags):bool 对数组排序</p>
+<pre><code>1.sort_flags 排序的行为
+</code></pre></li>
+<li><p>natcasesort(array):bool 用自然算法对数组不区分大小写字母排序</p>
+</li>
+<li><p>usort(array,value_compare_func):bool 使用用户自定义的比较函数对数组中的值进行排序</p>
+</li>
+</ul>
+<h4 id="2019-1-25"><a href="#2019-1-25" class="headerlink" title="2019/1/25"></a>2019/1/25</h4><ul>
+<li><p>reset(array):mixed 将数组的内部指针指向第一个单元</p>
+</li>
+<li><p>list(var,…var):array  把数组中的值赋给一组变量</p>
+</li>
+<li><p>each(array):array 返回数组中当前的key/value 并将数组指针向前移动一步</p>
+</li>
+<li><p>end(array):mixed 将数组的内部指针指向最后一个单元</p>
+</li>
+<li><p>extract(array,flags,prefix):int 从数组中将变量导入到当前的符号表</p>
+</li>
+</ul>
+<h4 id="2019-1-24"><a href="#2019-1-24" class="headerlink" title="2019/1/24"></a>2019/1/24</h4><ul>
+<li><p>array_walk_recursive(array,callback,userdata):bool  对数组中的每个成员递归的应用用户函数</p>
+<pre><code>1.array 输入的数组
+2.callback 回调函数
+3.userdata 提供可选参数
+4.return 成功true 失败false
+</code></pre></li>
+<li><p>arsort(array,sort_flags):bool 对数组进行逆向排序并保持索引关系</p>
+</li>
+<li><p>asort(array,sort_flags):bool 对数组进行排序并保持索引关系</p>
+<pre><code>1.array 输入的数组
+2.sort_flags 可以用可选的参数sort_flags改变排序行为
+3.return 成功true,失败返回false
+</code></pre></li>
+<li><p>compact(varname):array 建立一个数组,包含变量名和他们的值</p>
+<pre><code>1.varname 接受可变的参数数目,可以是字符串,也可以是数组
+2.return 返回输出的数组
+</code></pre></li>
+<li><p>current(array):mixed 返回数组中的当前单元</p>
+<pre><code>1.array 这个数组
+2.return 当前被内部指针指向的数组,并不移动指针,如果内部指针超出了单元列表的末端
+</code></pre></li>
+</ul>
+<h4 id="2019-1-23"><a href="#2019-1-23" class="headerlink" title="2019/1/23"></a>2019/1/23</h4><ul>
+<li><p>array_combine(keys,values):array 创建一个数组,一个数组的值作为键名,另一个值作为其值</p>
+<pre><code>1.keys 将被作为新数组的键,非法的值将会被转换为字符串类型
+2.values 将作为array的值
+3.return 合并的array,如果两个数组的单元数不同则返回false
+</code></pre></li>
+<li><p>array_count_values(array):array 统计数组中所有的值</p>
+<pre><code>1.array 统计这个数组的值
+2.return 一个关联数组,用array里数组中的值作为键名,该值在数组中出现的次数为值
+</code></pre></li>
+<li><p>array_diff_assoc(array,…array):array  带索引检查计数的差集</p>
+<pre><code>1.return 一个数组,该数组包含第一个数组中不存在于任何其他数组中的所有值
+</code></pre></li>
+<li><p>array_diff_key(array,…array):array 使用键名比较计算数组的差集</p>
+<pre><code>1.return 一个数组,该数组包含所有出现在第一个数组但是未出现在任何其他参数数组中的键的值
+</code></pre></li>
+<li><p>array_diff_uassoc 用用户提供的回调函数做索引检查来计算数组的差集</p>
+<h4 id="2019-1-22"><a href="#2019-1-22" class="headerlink" title="2019/1/22"></a>2019/1/22</h4></li>
+<li><p>array_filter(array,callback,falg):array 用回调函数过滤数组中的单元</p>
+<pre><code>1.array 要循环的数组
+2.callback 使用的回调函数
+3.flag 决定callback接收的参数形式
+    1.ARRAY_FILTER_USE_KEY - callback接受键名作为的唯一参数
+    2.ARRAY_FILTER_USE_BOTH - callback同时接受键名和键值
+4.return 过滤后的数组
+</code></pre></li>
+<li><p>array_unshift(array,…):int 在数组开头插入一个或多个单元</p>
+<pre><code>1.return array数组新的单元数目
+</code></pre></li>
+<li><p>array_shift (array):mixed 将数组开头的单元移除数组</p>
+<pre><code>1.return 移出的值,如果array为空或者不是一个数组返回null
+</code></pre></li>
+<li><p>array_pop(array):mixed 弹出数组最后一个单元(出栈)</p>
+<pre><code>1.array 需要弹出栈的数组
+2.return array的最后一个值,如果array为空或者不是一个数组,返回null
+</code></pre></li>
+<li><p>array_push(array,value,…value):int 将一个或多个单元压入数组的末尾(入栈)</p>
+<pre><code>1.array 输入的数组
+2.value 压入array末尾的第一个值
+3.return 处理之后数组的元素个数
+</code></pre></li>
+</ul>
+<h4 id="2019-1-21"><a href="#2019-1-21" class="headerlink" title="2019/1/21"></a>2019/1/21</h4><ul>
+<li><p>array_fill(start_index,num.value):array 用给定的值填充数组</p>
+<pre><code>1.start_index 返回数组的第一个索引值
+2.num 插入元素的数量,必须大于或等于0
+3.value 用来填充的值
+4.return 填充后的数组
+</code></pre></li>
+<li><p>array_chunk(array,size,preserve_keys):array 将一个数组分割成多个</p>
+<pre><code>1.array 需要操作的数组
+2.size 每个数组的单元数目
+3.preserve_keys 为true可以保留原来的key,如果为false,重置索引,默认false
+4.return 得到的数组是一个多维数组中的单元
+</code></pre></li>
+<li><p>array_slice(array,offset,length,preserve_keys):array 从数组中取出一段</p>
+</li>
+</ul>
+<pre><code>1.array 输入的数组
+2.offset 如果 offset 非负，则序列将从 array 中的此偏移量开始。如果 offset 为负，则序列将从 array 中距离末端这么远的地方开始
+3.length 从offset开始的长度
+4.preserve_keys 默认会重置数组的索引,为true不重置
+5.return 其中的一段,如果offset参数大于array尺寸,就会返回空的array
+</code></pre><ul>
+<li><p>array_diff(array,…array):array 计算数组的差集</p>
+<pre><code>1.return 一个数组,该数组包含所有在第一个array,但是不在其他任何参数数组的值
+</code></pre></li>
+<li><p>array_intersect(array,…array):array计算数组的交集 </p>
+<pre><code>1.return 一个数组,该数组包含了所有在第一个数组中也同时出现在其他参数数组的值
+</code></pre></li>
+</ul>
+<h4 id="2019-1-20"><a href="#2019-1-20" class="headerlink" title="2019/1/20"></a>2019/1/20</h4><ul>
+<li><p>strip_tags(string,allowable_tags):string 从字符串中除去html和php标记</p>
+<pre><code>1.string 输入字符串
+2.allowable_tags 使用可选的第二个参数指定不被去除的字符串列表
+3.return 处理后的字符串
+</code></pre></li>
+<li><p>explode(delimter,string,limit):array 使用一个字符串分割另一个字符串</p>
+<pre><code>1.delimiter 边界上的分隔字符
+2.string 输入的字符串
+3.limit 如果为正数,则返回数组最多包含limit个元素,而最后那个元素包含string的剩下部分
+4.return 此函数返回由字符串组合的array,每个元素都是string的一个子串,如果delimiter为空字符串,返回false
+</code></pre></li>
+<li><p>implode(glue,pieces):string  将一个一维数组的值转化为字符串</p>
+<pre><code>1.glue 默认为空的字符串
+2.pieces 你想要转化的数组
+3.return 字符串,其内容为由glue分割开的数组的值
+</code></pre></li>
+</ul>
+<ul>
+<li><p>substr(string,start,length):string 返回字符串的子串</p>
+<pre><code>1.string 输入字符串,必须至少有一个字符
+2.start 返回的字符串从string的start位置开始
+3.length 从start开始的截取的长度
+4.提取的子字符串,失败返回false
+</code></pre></li>
+<li><p>str_word_count(string,format,charlist):mixed 返回字符串中单词的使用情况</p>
+<pre><code>1.string 字符串
+2.format 指定函数的返回值
+    0 - 返回单词的数量
+    1 - 返回一个包含string中全部单词的数组
+    2 - 返回关联数组,key是单词在string中出现的数值位置,value 是这个单词
+3.charlist 附加的字符串,其中的字符串也被视为单词的一部分
+4.return 返回一个数组或整型数,取决于format参数的选择
+</code></pre></li>
+</ul>
+<h4 id="2019-1-19"><a href="#2019-1-19" class="headerlink" title="2019/1/19"></a>2019/1/19</h4><ul>
+<li><p>abs(number):number 绝对值</p>
+</li>
+<li><p>str_pad(input,pad_length,pad_string,pad_type):string 使用另一个字符串填充字符串为指定长度</p>
+<pre><code>1.input 输入的字符串
+2.pad_length 如果这个的值是负数,小于或者等于输入字符串的长度,不会发生任何填充,并会返回input
+3.pad_string 填充的字符串
+4.pad_type 可选
+5.return 填充的字符串
+</code></pre></li>
+<li><p>str_repeat(input,multiplier) 重复一个字符串</p>
+<pre><code>1.input 待操作的字符串
+2.multiplier 被重复的次数
+3.return 重复后的字符串
+</code></pre></li>
+<li><p>str_split(string,split_length):array 将一个字符串转换为数组</p>
+<pre><code>1.string 输入字符串  
+2.split_length 每一段的长度
+3.return 如果指定了split_length的参数,返回数组每个元素均为一个长度为split_length的字符块,否则每一个字符块为单个字符.如果split_length小于1,返回false,如果超过,整个字符串作为数组仅有一个的元素返回
+</code></pre></li>
+<li><p>strrev(string):string 反转字符串  </p>
+</li>
+</ul>
+<h4 id="2019-1-18"><a href="#2019-1-18" class="headerlink" title="2019/1/18"></a>2019/1/18</h4><ul>
+<li><p>is_numeric(var):bool 检测变量是否为数字或者数字字符串</p>
+</li>
+<li><p>array_column(array,column_key,index_key):array 返回数组中指定的一列</p>
+<pre><code>1.array 需要取出数组列的多维数组
+2.column_key 需要返回值得列,如果是null,返回整个数组
+3.index_key 返回数组得索引/键得列
+4.return 从多维数组返回单列数组
+</code></pre></li>
+<li><p>array_search(needle,haystack,strict):mixed 在数组中搜索给定的值，如果成功则返回首个相应的键名</p>
+<pre><code>1.needle 待搜索得值
+2.haystack 待搜索得数组
+3.strict 严格比较(===)
+4.return 如果找到needle 则返回他的键,否则false
+</code></pre></li>
+<li><p>in_array(needle,haystack,strict):bool 检查数组中是否存在某一个值</p>
+<pre><code>1.needle 待搜索得值
+2.haystack 待搜索得数组
+3.strict 严格比较(===)
+4.return 找到返回true,失败返回false
+</code></pre></li>
+<li><p>array_unique(array,sort_flags):array 移除数组中重复得值</p>
+<pre><code>1.array 输入得数组
+2.sort_flags 可选参数sort_flags 可用于修改排序得行为
+3.return 返回过滤后的数组
+</code></pre></li>
+</ul>
+<h4 id="2019-1-17"><a href="#2019-1-17" class="headerlink" title="2019/1/17"></a>2019/1/17</h4><ul>
+<li><p>array_keys(array,search_value,strict):array 返回array中的数字或者字符串的键名</p>
+<pre><code>1.array 一个数组
+2.search_value 如果指定了这个参数,只有包含这些值的键才会返回 不然会返回全部
+3.strict 严格比较(===)
+4.return 键名
+</code></pre></li>
+<li><p>array_values(array):array 返回数组中的值并给其建数字索引</p>
+</li>
+<li><p>array_merge(array,array,…):array 合并一个或多个数组</p>
+<pre><code>1.array 合并的数组,可多个
+ps.如果数组中有相同的字符串键名，则该键名后面的值覆盖前面的值；如果想让前面的值覆盖后面，则可以使用 + 号,如果是数字键名,后面的值不会覆盖原来的值,而是附加到后面
+</code></pre></li>
+<li><p>str_shuffle(string):string 随机打乱一个数组</p>
+<pre><code>1.要打乱的字符串
+2.return 打乱后的字符串
+</code></pre></li>
+<li><p>shuffle(array):bool 打乱数组</p>
+<pre><code>1. array 待操作的数组
+2. return 成功返回true 失败false
+</code></pre></li>
+</ul>
+<h4 id="2019-1-16"><a href="#2019-1-16" class="headerlink" title="2019/1/16"></a>2019/1/16</h4><ul>
+<li><p>iconv(in_charset,out_charset,string):string 将字符串string从in_charset转换编码到out_charset</p>
+<pre><code>1.in_charset  必需,输入的字符集
+2.out_charset 必需,输出的字符集
+3.string 要转化的字符串
+4.return 转换后的字符串,失败返回false
+</code></pre></li>
+<li><p>uniqid(prefix,more_entropy):string  </p>
+<pre><code>1.prefix 前缀,为空返回长度13的字符串,more_entropy为true,返回23的字符串
+2.more_entropy 为true,使得id更具有唯一性
+3.return 一个带前缀,基于当前时间微秒生成得唯一ID
+</code></pre></li>
+<li><p>gettype(var):string 获取php变量的类型</p>
+</li>
+<li><p>settype(var,type):bool 设置php变量的类型</p>
+<pre><code>1.var 要转化的变量
+2.type 要变成的类型
+3.return 成功返回true,失败false
+</code></pre></li>
+<li><p>getcwd():string 返回当前工作区目录</p>
+</li>
+</ul>
+<h4 id="2019-1-15"><a href="#2019-1-15" class="headerlink" title="2019/1/15"></a>2019/1/15</h4><ul>
+<li><p>strpos(string,find,start):int  查找字符串首次出现的位置 (对大小写敏感)   </p>
+</li>
+<li><p>stripos(string,find,start):int  查找字符串首次出现的位置 (对大小写不敏感) </p>
+</li>
+<li><p>strrpos(string,find,start):int  查找字符串最后一次出现的位置 (对大小写敏感)</p>
+<pre><code>1.string  必需,规定要搜索的字符串
+2.find  必需,规定要查找的字符串  
+3.start 可选,从何处开始搜索  
+4.return 字符串在另一个字符串第一次出现的位置,没有找到返回false
+</code></pre></li>
+<li><p>strstr(string,search,before_search):string 搜索字符串在另一字符串中的第一次出现(对大小写敏感)  </p>
+<pre><code>1.string 必需,规定要搜索的字符串
+2.search 必需,规定所搜索的字符串
+3.before_search 可选,默认false, 如果是true,则返回search参数之前第一次出现的字符串部分
+4.return 字符串剩余部分,如果没有找到则返回false
+</code></pre></li>
+<li><p>strrchr(string,char):string 查找字符串在另一个字符串中最后一次出现的位置</p>
+<pre><code>1.string 必需,规定要搜索的字符串
+2.char 必需,规定要查找的字符串
+3.return 从某个字符串在另一个字符串最后一次出现的位置到主字符串结尾的所有字符串,没有找到则返回false
+</code></pre></li>
+</ul>
+
           
         
       
@@ -382,7 +921,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -428,7 +967,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
